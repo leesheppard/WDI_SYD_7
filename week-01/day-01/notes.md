@@ -97,9 +97,14 @@ DETAILS
 
 ###### Every morning you should do the following:
   * Move into the WDI\_SYD\_7\_Work - **cd WDI\_SYD\_7\_Work**
-  * Move into the **git checkout -b development**
-  * **git fetch upstream**
-  * **git rebase upstream/master**
+  * git add .
+  * git commit -m "Completed HW"
+  * git push origin development
+  * git checkout master
+  * git pull origin development
+  * git push origin master
+  * git pull upstream master
+
 
 ###### At the end of each day:
   * Add everything to your local git repository - **git add .**
