@@ -11,6 +11,7 @@ WHAT WE COVERED
 * Loops (iteration)
 * Arrays
 * Methods and Arguments
+* Began the calculator exercise
 
 
 DETAILS
