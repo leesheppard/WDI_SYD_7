@@ -150,31 +150,49 @@ Common Methods for arrays:
 array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 array.shuffle # returns a shuffled version, if suffixed with a ! - it becomes destructive
+
 array.count # Tells you how many elements exist in the array, length and size do the same thing
+
 array.first # returns the first thing
+
 array.push(11) # adds another piece of data into the end of the array
+
 array.pop # In its simple form - it removes the last element.  But you can do a lot more with it.
+
 array.shift # Removes the first element in its simplest form.  
+
 array.unshift(1) # Adds an element at the start - this must take a parameter!
+
 array.sample # Returns a random element
+
 array.reverse # Flips it around
+
 array.join(', ') # Turns it into a string, and connects the elements with whatever is passed in.
+
 array.uniq # Returns the unique properties in an array
+
 array.empty? # Returns true if the array is empty
+
 array.slice(1) # This removes the thing in position 1, can do a lot more!
 ```
 
 [Check some more out here!](http://www.ruby-doc.org/core-2.1.4/Array.html)
 
-  to_a - can be used to turn things into an array
-  (1..10).to_a
-  (1...10).to_a
-  ("a".."z").to_a
+```ruby
+to_a # can be used to turn things into an array
 
+(1..10).to_a # this will make an array from 1 - 10 (two dots is inclusive)
 
-  0.step(100, 10).to_a
-  10.downto(1).to_a
-  1.upto(10).to_a
+(1...10).to_a # this will make an array from 1 - 9 (three dots is exclusive)
+
+("a".."z").to_a # this will make an array from all the letters (inclusive)
+
+0.step(100, 10).to_a # this will make an array with 0, 10, 20 etc.
+
+10.downto(1).to_a # this will make an array with 10, 9, 8 etc.
+
+1.upto(10).to_a # this will make an array with 1, 2, 3 etc.
+```
 
 #### Iterating through things!
 
@@ -211,20 +229,20 @@ end
 These are some of the more common ones.  Often used to clean up your responses and puts.
 They can only be used in double quotes!!  
 
-* \" – double quote
-* \\ – single backslash
-* \a – bell/alert
-* \b – backspace
-* \r – carriage return
-* \n – newline
-* \s – space
-* \t – tab
+* **\"** – double quote
+* **\\** – single backslash
+* **\a** – bell/alert
+* **\b** – backspace
+* **\r** – carriage return
+* **\n** – newline
+* **\s** – space
+* **\t** – tab
 
 ###### Type Coercion Methods in Ruby
 
-to_i
-to_f
-to_a
-to_s
+* **to_i** - To an integer
+* **to_f** - To a floating point number (one with decimals)
+* **to_a** - To an array
+* **to_s** - To a string
 
 
