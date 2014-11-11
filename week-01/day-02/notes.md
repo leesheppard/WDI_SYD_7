@@ -188,7 +188,7 @@ my_array = [1, 2, 3, 4, 5, 6]
 
 my_array.each { |x| puts "This is number #{x}" } # SAME AS BELOW
 
-my_array.each do |x|
+my_array.each do |x| # I PREFER THIS METHOD
   puts "This is number #{x}"
 end
 ```
@@ -199,7 +199,7 @@ my_array = [1, 2, 3, 4, 5, 6]
 
 puts my_array.map { |x| x * x } # SAME AS BELOW
 
-my_array.each do |number|
+my_array.map do |number|
   puts "This is number #{number}"
 end
 ```
