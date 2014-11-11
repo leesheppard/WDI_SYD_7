@@ -22,3 +22,29 @@ Working on this in the afternoon and overnight (homework)
 
 LinkedIn: https://linkedin.com/in/fluffyjack
 Twitter: https://twitter.com/FluffyJack
+
+## Quick challenge
+
+Creating an interactive story
+
+### Requirements
+
+1. One while loop
+2. 3 selection statements (if / unless)
+3. 5 questions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
