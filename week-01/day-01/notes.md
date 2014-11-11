@@ -105,7 +105,6 @@ DETAILS
   * git push origin master
   * git pull upstream master
 
-
 ###### At the end of each day:
   * Add everything to your local git repository - **git add .**
   * Add a commit message - **git commit -m "YOUR MESSAGE HERE"**
