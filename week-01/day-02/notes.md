@@ -247,3 +247,10 @@ They can only be used in double quotes!!
 * **to_s** - To a string
 
 
+### HOMEWORK
+
+* [Finish calculator](https://gist.github.com/FluffyJack/86a87b772bef94e2b9df)
+* [Ruby Koans!](http://rubykoans.com/) Optional
+* [Codeschool's Ruby Bits Video](https://www.codeschool.com/courses/ruby-bits) Optional
+* [Codeschool's Try Git](https://www.codeschool.com/courses/try-git) Optional
+* [Codeschool's Git Real](https://www.codeschool.com/courses/git-real) Optional
