@@ -259,64 +259,91 @@ This is an array method that returns a string of all of the elements in the arra
 ```
 
 
+#### Hashes (or objects)
 
+###### What is it?
 
+A dictionary! Occasionally called assosciative arrays.  But basically it is just a list of keys and values.
+The main differences betweens arrays and hashes are:
+* Arrays requires an index for referencing, whereas hashes can use any data type
+* Arrays can't have keys and values
 
+###### How to create them
 
+A bunch of ways:
 
+```ruby
+\# This is the implicit way
+this_is_a_hash = { 
+  "Name" => "Wolf",
+  "Age" => "Unknown"
+}
 
+\# This uses the Hash.new method
+hasho_mate = Hash.new
 
+\# You can use symbols as keys
+this_is_a_hash = { 
+  :name => "Wolf",
+  :age => "Unknown"
+}
 
+\# But that could also be written as this:
+\# You don't need to specify the fact that they are symbols, that happens automatically in Ruby
+this_is_a_hash = { 
+  name => "Wolf",
+  age => "Unknown"
+}
 
+```
 
+You can give a default value by saying:
 
+```ruby
+people = {"Timmy Doe" => 8}
+people.default = "agrees, Wolf's epic"
+puts people[:Jane Birkin] # Returns "agrees, Wolf's epic"
+```
 
+###### Common Methods with Hashes in Ruby
 
+**Each**
+```ruby
+people = {
+  "Jane Birkin" => "An angel",
+  "Fluffy Jack" => "A genius"
+}
 
+people.each do |key, value|
+  puts "#{key} is #{value}"
+end
 
+\# OR
 
+people.each { |key, value| puts "#{key} is #{value}" }
+```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+* [**each_key**](http://www.ruby-doc.org/core-2.1.4/Hash.html#each_key-method)
+  * Iterates through every key in the hash
+* [**each_pair**](http://www.ruby-doc.org/core-2.1.4/Hash.html#each_pair-method)
+  * Iterates through every key and value in the hash
+* [**each_value**](http://www.ruby-doc.org/core-2.1.4/Hash.html#method-i-each_value)
+  * Iterates through every value in the hash
+* [**empty?**](http://www.ruby-doc.org/core-2.1.4/Hash.html#method-i-empty-3F)
+  * Checks to see if it is an empty hash
+* [**flatten**](http://www.ruby-doc.org/core-2.1.4/Hash.html#method-i-flatten)
+  * Turns it into an array
+* [**has_key?**](http://www.ruby-doc.org/core-2.1.4/Hash.html#method-i-has_key-3F)
+  * Checks to see if a key exists
+* [**has_value?**](http://www.ruby-doc.org/core-2.1.4/Hash.html#method-i-has_value-3F)
+  * Checks to see if a value exists in the hash
+* [**invert**](http://www.ruby-doc.org/core-2.1.4/Hash.html#method-i-invert)
+  * Flips the keys and values around
+* [**length**](http://www.ruby-doc.org/core-2.1.4/Hash.html#method-i-length)
+  * checks to see how many key and value pairs exist
+* [**delete**](http://www.ruby-doc.org/core-2.1.4/Hash.html#method-i-delete)
+  * deletes a key and value pair with the key
+* [**merge**](http://www.ruby-doc.org/core-2.1.4/Hash.html#method-i-merge)
+  * Combines two hashes
+* [**shift**](http://www.ruby-doc.org/core-2.1.4/Hash.html#method-i-shift)
+  * Takes away the first key and value pair
