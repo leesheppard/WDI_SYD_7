@@ -15,6 +15,7 @@ WHAT WE COVERED
 * Downto, Upto, Times
 * Split Method
 * Join Method
+* Return
 
 
 DETAILS
@@ -129,7 +130,7 @@ arr.take(3) # will select the first 3 elements and return an array of them
 arr.drop(3) # Returns the elements after 3 have been skipped
 ```
 
-###### Getting an Information
+###### Getting Information
 
 A whole bunch of methods:
 
@@ -303,6 +304,20 @@ You can give a default value by saying:
 people = {"Timmy Doe" => 8}
 people.default = "agrees, Wolf's epic"
 puts people[:Jane Birkin] # Returns "agrees, Wolf's epic"
+```
+
+###### Accessing Hashes
+
+Lots of methods
+
+```ruby
+names = { "name1" => "Jane", "name2" => "Alexandra" }
+names["name1"]
+
+names = { :birkin => "Jane", :agoston => "Alexandra" }
+names[:birkin] # Returns "Jane"
+names["birkin".to_sym] # Same as above, turns a string into a symbol
+
 ```
 
 ###### Common Methods with Hashes in Ruby
