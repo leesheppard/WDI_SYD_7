@@ -32,9 +32,20 @@ It is the essence of DRY (**D**on't **R**epeat **Y**ourself) code - and a major 
 More or less, it is a blueprint for an object.  It bootstraps production of things that will occur a lot.
 It is a combination of keys, values and methods.  But the methods are the things that allow them to be so useful.  It also encapsulates variables and methods etc which is very helpful.
 
-What should you put in them?
-* Methods that need to be called on everything that uses this class
-* Your accessible attributes (i.e. attr_accessor :name, :yadda)
+What should they contain?
+* Methods - both instance methods and class methods
+* Class variables
+* Instance variables
+* Calls to methods that execute in the class context
+* attr_accessor
+
+The name must begin with a capital letter!  Class methods are always prefixed with self.
+* Instance methods are those that are called on an instance of the class
+* Class methods are those that are called on the class
+
+It is possible to create private methods etc. by using private, protected or something similar
+
+[This isn't horrible.](http://juixe.com/techknow/index.php/2007/01/22/ruby-class-tutorial/)
 
 
 ###### How do you create them?
@@ -65,7 +76,7 @@ french_person = FrenchPerson.new
 ###### Creating a Constructor Function - creating an initialize function
 
 In classes, the basic constructor function is "initialize".  This will be called on creation of a new instance.
-Convention says that this goes at the top of the class.
+Convention says that this goes at the top of the class.  You don't need one but it is convention to have one.
 
 ```ruby
 class Human # This defines the class
@@ -81,6 +92,14 @@ roger = Human.new("Roger", 42, "182cm")
 The keyword "self" gives you access to the current object.  If you create an instance of a class, self is that class.  If you call a method on french\_human (an instance of a class) - self is equal to french\_human.
 
 Very similar to Javascript's this.
+
+In a top level context (i.e. before you have entered any method, class etc.), self is equivalent to main - which is an instance method of Object
+
+In a class or module, self is the actual Class or module object
+
+In a class method, or in any method, self refers to the thing that is calling the method (i.e. in the case of roger.intialize - self is equal to roger)
+
+[Worth having a look here...](http://rubylearning.com/satishtalim/ruby_self.html)
 
 #### The Super Method
 
