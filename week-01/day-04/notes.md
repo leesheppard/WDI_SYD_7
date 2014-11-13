@@ -121,8 +121,8 @@ end
 
 #### Debugging
 
-"If debugging is the practice of removing bugs from software... then programming must be the practice of adding them. "
-- Edsger W Dijkstr
+"If debugging is the practice of removing bugs from software... then programming must be the practice of adding them."
+\- Edsger W Dijkstr
 
 There are lots of different methods of debugging, but for the moment they can be broken into the binding.pry method and the puts method.  Please do this regularly - if there are errors - find the line number (normally that is in the error - MAKE SURE YOU READ THE ERROR!!!)
 
@@ -157,9 +157,10 @@ Before you understand it, there are a few things that you need to have a look at
 ###### Types of Variables
 
 There are a whole heap of variable types - and they don't a long time to get used to.  Convention states that a:
-  Instance variable - start with an @ and are snake case
-  Constants - all capitals snake_case
-  Class variables - prefixed with a @@ (global within the class)
+* Instance variable - start with an @ and are snake case
+* Constants - all capitals snake_case
+* Class variables - prefixed with a @@ (global within the class)
+* There are also global variables - but we don't use them.
 
 ###### Detecting the Scope of variables
 
