@@ -177,21 +177,21 @@ defined? @x # Returns 'instance-variable'
 
 The first couple of programs we wrote - it was fine to keep them in one file, but our code has started to grow.  It is now at the point that breaking our code into logical groupings is far better.  
 
-A bunch of ways to do it:
+A bunch of ways to do it: (ignore the load method, but it does exist)
 
-Using the load method...
+Using the load method...  This will load the file everytime it needs it
 
 ```ruby
 load 'filename.rb'
 ```
 
-Using the require method...
+Using the require method...  This will store the file after loading it once (preferred method!!!)
 
 ```ruby
 require 'filename' # Notice there is no .rb!
 ```
 
-Using the require_relative method...
+Using the require_relative method...  Same as above, but it is relative to the current file URL
 
 ```ruby
 require 'filename' # Notice there is no .rb!
