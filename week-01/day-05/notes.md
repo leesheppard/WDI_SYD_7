@@ -259,5 +259,6 @@ Add and Commit as regularly as tolerable.  My process is always add ., commit so
 #### HOMEWORK
 
 [Happitails!!](https://gist.github.com/FluffyJack/34049791bde42f7f0cea)
+
 [And go and do these videos](https://rubymonk.com/learning/books/1-ruby-primer)
 
