@@ -7,7 +7,6 @@ WHAT WE COVERED
 
 * Walk through of Rental Exercise
 * Modules
-* Array Methods
 * Multifiles
 * Instance Variables
 * Chat with Riley
