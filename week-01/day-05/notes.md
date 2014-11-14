@@ -18,6 +18,8 @@ WHAT WE COVERED
 DETAILS
 -------
 
+[Here are all todays files](https://github.com/ga-students/WDI_SYD_7/tree/master/week-01/day-05)
+
 #### The Rental Exercise
 
 ###### Approach
