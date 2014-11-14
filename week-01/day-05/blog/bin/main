@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+require_relative "../lib/blog/app"
+require_relative "../lib/database/table"
+
+Blog::App.new.start
