@@ -219,3 +219,13 @@ No way for it to happen naturally...  But if you want it to work:
 * In between the square brackets, copy and paste this line:
   **{ "keys": ["ctrl+shift+."], "command": "erb" }**
 * Restart Sublime and from then on - **ctrl + shift + .** will create ERB delimiters - and then alternate
+
+#### HOMEWORK
+
+* [Basic Calculator Implementation with Sinatra and ERB](https://gist.github.com/FluffyJack/4165b7b88e6902275f5e)
+* Implement the Advanced Calculator if you wish
+* Then these tutorials:
+  * [Sinatra 1 on Sitepoint](http://www.sitepoint.com/just-do-it-learn-sinatra-i/)
+  * [Sinatra 2 on Sitepoint](http://www.sitepoint.com/just-do-it-learn-sinatra-ii-2/)
+  * [Sinatra 3 on Sitepoint](http://www.sitepoint.com/just-do-it-learn-sinatra-iii/)
+  * [Sinatra 4 on Sitepoint](http://www.sitepoint.com/just-do-it-learn-sinatra-iv/)
