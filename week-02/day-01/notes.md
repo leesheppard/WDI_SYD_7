@@ -5,6 +5,7 @@ Week 02, Day 01
 WHAT WE COVERED
 ---------------
 
+* [Morning Exercise](https://gist.github.com/FluffyJack/161e1717fff648b73b56)
 * What is the internet...
 * HTTP
   * HTTPS
@@ -18,6 +19,8 @@ WHAT WE COVERED
 * CSS
 * Types of Requests
 * Sinatra
+* [Roman Numerals to Sinatra](https://gist.github.com/FluffyJack/6eb2b1219b6c36548752)
+* [Homework - Calculator with ERB and Sinatra](https://gist.github.com/FluffyJack/4165b7b88e6902275f5e)
 
 
 DETAILS
@@ -207,7 +210,7 @@ There are a bunch of different options for interpolation with Ruby:
 <%  -%>
 ```
 
-###### ERB Automcomplete
+###### ERB Autocomplete
 
 No way for it to happen naturally...  But if you want it to work:
 * Open Package Control (cmnd + shift + p, then type install, then hit enter)
