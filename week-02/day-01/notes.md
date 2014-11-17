@@ -19,7 +19,7 @@ WHAT WE COVERED
 * CSS
 * Types of Requests
 * Sinatra
-* [Roman Numerals to Sinatra](https://gist.github.com/FluffyJack/6eb2b1219b6c36548752)
+* [Lab - Roman Numerals to Sinatra](https://gist.github.com/FluffyJack/6eb2b1219b6c36548752)
 * [Homework - Calculator with ERB and Sinatra](https://gist.github.com/FluffyJack/4165b7b88e6902275f5e)
 
 
