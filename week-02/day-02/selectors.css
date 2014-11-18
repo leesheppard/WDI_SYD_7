@@ -1,0 +1,33 @@
+/*h1, h2, h3, h4, h5, h6 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+}
+
+#main {
+  font-weight: bold;
+  color: #ff0000;
+}
+
+.brand-related {
+  color: #ccccff;
+}*/
+
+#main {
+  color: green;
+}
+
+#about-us .brand-related {
+  color: blue;
+  font-family: Helvetica;
+}
+
+h1 {
+  color: red;
+}
+
+
+
+
+
+
+
