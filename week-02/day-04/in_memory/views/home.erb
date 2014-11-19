@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <form action="/order-coffee" method="POST">
+    <p>
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" placeholder="John Appleseed">
+    </p>
+    <p>
+      <label for="coffee">Coffee</label>
+      <input type="text" name="coffee" id="coffee" placeholder="Mochachocalatte">
+    </p>
+    <p>
+      <input type="submit" value="Place Order">
+    </p>
+  </form>
+
+  <h2>Current Orders</h2>
+  <ul>
+    <% @orders.each do |o| %>
+    <li><strong><%= o[:name] %></strong>: <%= o[:coffee] %></li>
+    <% end %>
+  </ul>
+</body>
+</html>
