@@ -13,9 +13,11 @@ get '/' do
 end
 
 post '/order-coffee' do
-  Storage.storage << {
-    name: params[:name],
-    coffee: params[:coffee]
-  }
+  unless params[:name].empty? || params[:coffee].empty?
+    Storage.storage << {
+      name: params[:name],
+      coffee: params[:coffee]
+    }
+  end
   redirect '/'
 end
