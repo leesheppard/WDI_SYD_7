@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+.clearfix {
+  clear: both;
+}
+
+body {
+  padding: 0 20px;
+}
+
+#container {
+  width: 100%;
+}
+
+header, nav, main, #sidebar, #footer-left, #footer-right {
+  padding: 20px;
+}
+
+header {
+  background: #FF0000;
+  color: #FFFFFF;
+}
+
+nav {
+  background: #00FF00;
+}
+
+main {
+  background: #0000FF;
+  color: #FFFFFF;
+  width: 70%;
+  float: left;
+}
+
+#sidebar {
+  background: #FFFF00;
+  width: 30%;
+  float: left;
+}
+
+#footer-left {
+  background: #00FFFF;
+  width: 50%;
+  float: left;
+}
+
+#footer-right {
+  background: #FF00FF;
+  width: 50%;
+  float: right;
+}
+
+
+
+
+
+
