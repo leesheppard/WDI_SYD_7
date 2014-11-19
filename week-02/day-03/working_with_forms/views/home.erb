@@ -1,0 +1,86 @@
+<form action="/buy-product" method="POST">
+  <input type="hidden" name="price" value="12.95">
+  <input type="number" name="qty" value="3">
+  <input type="text" name="product_name" value="Samsung TV">
+  <label for="email">Email:</label>
+  <input type="text" name="email" id="email" placeholder="info@example.com">
+  <input type="search" name="search_query">
+  <input type="tel">
+  <input type="password">
+  <input type="color" name="color">
+  <input type="submit" value="Buy Now!">
+
+  <hr>
+
+  <label>Car features</label><br>
+
+
+
+
+
+
+
+
+  <input type="checkbox" id="heated_seats" name="car_features[]" value="Heated Seats">
+  <label for="heated_seats">Heated Seats</label><br>
+
+
+
+
+
+
+
+
+
+
+  <input type="checkbox" id="power_windows" name="car_features[]" value="Power Windows">
+  <label for="power_windows">Power windows</label><br>
+  <input type="checkbox" name="car_features[]" value="Sunroof">
+  <label>Sunroof</label><br>
+  <input type="checkbox" name="car_features[]" value="Stereo" checked>
+  <label>Stereo</label>
+
+  <hr>
+
+  <label>Shirt size</label><br>
+
+
+
+
+  <input type="radio" id="extra-small" name="shirt_size" value="XS">
+  <label for="extra-small">XS</label><br>
+
+
+
+
+
+
+  <input type="radio" id="small" name="shirt_size" value="S">
+  <label for="small">S</label><br>
+  <input type="radio" id="medium" name="shirt_size" value="M">
+  <label for="medium">M</label><br>
+  <input type="radio" id="large" name="shirt_size" value="L">
+  <label for="large">L</label><br>
+  <input type="radio" id="extra_large" name="shirt_size" value="XL">
+  <label for="extra_large">XL</label><br>
+
+  <label for="countries">Country</label>
+  <select id="countries" name="country">
+    <optgroup label="Oceania">
+    <option value="Australia">Australia</option>
+    <option value="Syria">Syria</option>
+    </optgroup>
+    <option value="United States" selected>United States</option>
+    <option value="United Kingdom">United Kingdom</option>
+  </select>
+
+</form>
+
+
+
+
+
+
+
+
+
