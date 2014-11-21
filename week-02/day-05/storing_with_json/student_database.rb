@@ -7,7 +7,7 @@ unless File.exists?('student_database.txt')
 else
   # Step 5: Print the database
   the_file_data = File.open('student_database.txt', 'r').read
-  puts JSON(the_file_data)
+  puts JSON.parse(the_file_data) rescue []
 end
 
 # Step 2: Get names
@@ -18,7 +18,7 @@ name = gets.strip
 
 if File.exists? 'student_database.txt'
   the_file_data = File.open('student_database.txt', 'r').read
-  student_names = JSON(the_file_data)
+  student_names = JSON.parse(the_file_data) rescue []
 else
   student_names = []
 end
@@ -37,7 +37,7 @@ File.open('student_database.txt', 'w+') do |sd|
 end
 
 the_file_data = File.open('student_database.txt', 'r').read
-puts JSON(the_file_data)
+puts JSON.parse(the_file_data)
 
 
 
