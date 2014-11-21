@@ -7,6 +7,12 @@ class Storage
   end
 end
 
+get '/json' do
+  @title = "Frozen"
+  @year = 2013
+  erb :json
+end
+
 get '/' do
   @orders = Storage.storage
   erb :home

@@ -1,0 +1,11 @@
+<% if @movies %>
+  <ul>
+  <% @movies.each do |movie| %>
+    <li>
+      <a href="/movies/<%= movie["imdbID"] %>">
+        <%= movie["Title"] %>
+      </a>
+    </li>
+  <% end %>
+  </ul>
+<% end %>
