@@ -1,0 +1,32 @@
+CREATE TABLE students (
+  id serial primary key,
+  firstname varchar(20) NOT NULL,
+  lastname varchar(50) NOT NULL,
+  date_added timestamp DEFAULT now()
+);
+
+INSERT INTO students (firstname, lastname) VALUES ('Adam', 'McCabe'),
+('Alex', 'Gaynor'),
+('Anthony', 'Brancazio'),
+('Chandler', 'Moisen'),
+('Christopher', 'Huyett'),
+('David', 'Han'),
+('Francesca', 'Wedemeyer'),
+('Heather', 'Wigmore'),
+('Javier', 'Fernandez'),
+('Cassie', 'Walther'),
+('Joseph', 'Jung'),
+('Lane', 'Burks'),
+('Matt', 'Marcelo'),
+('Michael', 'Glumac'),
+('Camila', 'Cano'),
+('Mitul', 'Patel'),
+('Neel', 'Patel'),
+('Rahilla', 'Zafar'),
+('Rudy', 'Crespo'),
+('Samuel', 'Spector'),
+('Scott', 'Norvell'),
+('Stan', 'Kudrow'),
+('Sunmi', 'Oh'),
+('Wesley', 'Yu'),
+('Winson', 'Yuan');

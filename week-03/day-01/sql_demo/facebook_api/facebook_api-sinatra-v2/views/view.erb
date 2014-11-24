@@ -1,0 +1,23 @@
+<form action='/' method='get'>
+  <input type='text' name='username' autofocus />
+  <input type='submit' />
+</form>
+
+<% if !@hash.blank? %>
+  <section>
+    <ul>
+      <% if @hash["username"].present? %>
+        <li><img src="https://graph.facebook.com/<%= @hash["username"] %>/picture?type=large"></li>
+      <% end %>
+      <% @hash.each do |key, value| %>
+        <li><b><%= key.capitalize %>:</b> 
+          <% if key == "link" %>
+            <a href="<%= value %>" target="_blank"><%= value %></a>
+          <% else %>
+            <%= value %>
+          <% end %>
+        </li>
+      <% end %>
+    </ul>
+  </section>
+<% end %>
