@@ -1,0 +1,17 @@
+<p>
+  <a href="/workers/new">Add Worker</a>
+</p>
+
+<ul>
+<% @workers.each do |worker| %>
+  <li style="line-height: 3em;">
+    <%= worker["first_name"] + " " + worker["last_name"] %>
+
+    <span style="background: #bbb; padding: 10px;">(Actions: <a href="/workers/<%= worker["id"] %>/edit">Edit</a> |
+    <form action="/workers/<%= worker["id"] %>" method="POST" style="display: inline;">
+      <input type="hidden" name="_method" value="DELETE">
+      <input type="submit" value="Destroy">)
+    </form></span>
+  </li>
+<% end %>
+</ul>

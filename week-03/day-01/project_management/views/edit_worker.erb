@@ -1,0 +1,15 @@
+<form action="/workers/<%= @worker["id"] %>" method="POST">
+  <input type="hidden" name="_method" value="PUT">
+
+  <p>
+    <label for="first_name">First Name</label><br>
+    <input type="text" name="first_name" id="first_name" value="<%= @worker["first_name"] %>">
+  </p>
+  <p>
+    <label for="last_name">Last Name</label><br>
+    <input type="text" name="last_name" id="last_name" value="<%= @worker["last_name"] %>">
+  </p>
+  <p>
+    <input type="submit" value="Update Worker">
+  </p>
+</form>

@@ -1,0 +1,24 @@
+<p>
+  <a href="/tasks/new">Add Task</a>
+</p>
+
+<ul>
+<% @tasks.each do |task| %>
+  <li style="line-height: 3em;">
+    <strong><%= task["title"] %></strong>
+    <% if task["due_at"] %>
+    (Due at: <%= task["due_at"] %>)
+    <% end %>
+
+    <% if task["worker_first_name"] %>
+    <em>Assigned to: <%= task["worker_first_name"] + " " + task["worker_last_name"] %></em>
+    <% end %>
+
+    <span style="background: #bbb; padding: 10px;">(Actions: <a href="/tasks/<%= task["id"] %>/edit">Edit</a> |
+    <form action="/tasks/<%= task["id"] %>" method="POST" style="display: inline;">
+      <input type="hidden" name="_method" value="DELETE">
+      <input type="submit" value="Destroy">)
+    </form></span>
+  </li>
+<% end %>
+</ul>
