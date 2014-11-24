@@ -1,0 +1,16 @@
+<table>
+  <thead>
+    <tr>
+      <th>Email Addresses</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @emails.each do |row| %>
+      <tr>
+        <td><%= row["email"] %></td>
+        <td><a href="/view/<%= row["id"] %>">View</a></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

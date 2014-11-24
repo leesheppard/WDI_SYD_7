@@ -1,0 +1,27 @@
+<form action="/tasks" method="POST">
+  <p>
+    <label for="title">Title</label><br>
+    <input type="text" name="title" id="title">
+  </p>
+  <p>
+    <label for="due_at">Due At</label><br>
+    <input type="text" name="due_at" id="due_at">
+  </p>
+  <p>
+    <label for="worker_id">Worker</label><br>
+    <select name="worker_id" id="worker_id">
+      <% @workers.each do |worker| %>
+      <option value="<%= worker["id"] %>">
+        <%= worker["first_name"] + " " + worker["last_name"] %>
+      </option>
+      <% end %>
+    </select>
+  </p>
+  <p>
+    <label for="notes">Notes</label><br>
+    <textarea name="notes" id="notes"></textarea>
+  </p>
+  <p>
+    <input type="submit" value="Create Task">
+  </p>
+</form>
