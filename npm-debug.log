@@ -1,0 +1,906 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'jsc' ]
+2 info using npm@1.4.14
+3 info using node@v0.10.29
+4 verbose cache add [ 'jsc', null ]
+5 verbose cache add name=undefined spec="jsc" args=["jsc",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'jsc',
+6 verbose parsed url   path: 'jsc',
+6 verbose parsed url   href: 'jsc' }
+7 silly lockFile d7d8f972-jsc jsc
+8 verbose lock jsc /Users/jackjeffress/.npm/d7d8f972-jsc.lock
+9 silly lockFile d7d8f972-jsc jsc
+10 silly lockFile d7d8f972-jsc jsc
+11 verbose addNamed [ 'jsc', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 622fac06-jsc jsc@
+14 verbose lock jsc@ /Users/jackjeffress/.npm/622fac06-jsc.lock
+15 silly addNameRange { name: 'jsc', range: '*', hasData: false }
+16 verbose url raw jsc
+17 verbose url resolving [ 'https://registry.npmjs.org/', './jsc' ]
+18 verbose url resolved https://registry.npmjs.org/jsc
+19 info trying registry request attempt 1 at 15:06:43
+20 http GET https://registry.npmjs.org/jsc
+21 http 200 https://registry.npmjs.org/jsc
+22 silly registry.get cb [ 200,
+22 silly registry.get   { date: 'Tue, 25 Nov 2014 04:06:43 GMT',
+22 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+22 silly registry.get     etag: '"3VW0CXYMW6NV80NYA2IE9A9GO"',
+22 silly registry.get     'content-type': 'application/json',
+22 silly registry.get     'cache-control': 'max-age=60',
+22 silly registry.get     'content-length': '26960',
+22 silly registry.get     'accept-ranges': 'bytes',
+22 silly registry.get     via: '1.1 varnish',
+22 silly registry.get     age: '0',
+22 silly registry.get     'x-served-by': 'cache-syd1621-SYD',
+22 silly registry.get     'x-cache': 'MISS',
+22 silly registry.get     'x-cache-hits': '0',
+22 silly registry.get     'x-timer': 'S1416888403.521827,VS0,VE364',
+22 silly registry.get     vary: 'Accept',
+22 silly registry.get     'keep-alive': 'timeout=10, max=50',
+22 silly registry.get     connection: 'Keep-Alive' } ]
+23 silly addNameRange number 2 { name: 'jsc', range: '*', hasData: true }
+24 silly addNameRange versions [ 'jsc',
+24 silly addNameRange   [ '0.3.3',
+24 silly addNameRange     '0.3.5',
+24 silly addNameRange     '0.3.6',
+24 silly addNameRange     '0.3.7',
+24 silly addNameRange     '0.3.8',
+24 silly addNameRange     '0.3.9',
+24 silly addNameRange     '0.3.10',
+24 silly addNameRange     '0.3.11' ] ]
+25 verbose addNamed [ 'jsc', '0.3.11' ]
+26 verbose addNamed [ '0.3.11', '0.3.11' ]
+27 silly lockFile ebd414a3-jsc-0-3-11 jsc@0.3.11
+28 verbose lock jsc@0.3.11 /Users/jackjeffress/.npm/ebd414a3-jsc-0-3-11.lock
+29 silly lockFile 0d94221f-try-npmjs-org-jsc-jsc-0-3-11-tgz https://registry.npmjs.org/jsc/-/jsc-0.3.11.tgz
+30 verbose lock https://registry.npmjs.org/jsc/-/jsc-0.3.11.tgz /Users/jackjeffress/.npm/0d94221f-try-npmjs-org-jsc-jsc-0-3-11-tgz.lock
+31 verbose addRemoteTarball [ 'https://registry.npmjs.org/jsc/-/jsc-0.3.11.tgz',
+31 verbose addRemoteTarball   'b8981c3bf6dac58e2843ff3ccff7c155344ee816' ]
+32 info retry fetch attempt 1 at 15:06:43
+33 verbose fetch to= /var/folders/5z/y6dhx4dd7hqd70x9nsghxwmr0000gn/T/npm-7274-_SGYcU5z/registry.npmjs.org/jsc/-/jsc-0.3.11.tgz
+34 http GET https://registry.npmjs.org/jsc/-/jsc-0.3.11.tgz
+35 http 200 https://registry.npmjs.org/jsc/-/jsc-0.3.11.tgz
+36 silly lockFile 0d94221f-try-npmjs-org-jsc-jsc-0-3-11-tgz https://registry.npmjs.org/jsc/-/jsc-0.3.11.tgz
+37 silly lockFile 0d94221f-try-npmjs-org-jsc-jsc-0-3-11-tgz https://registry.npmjs.org/jsc/-/jsc-0.3.11.tgz
+38 silly lockFile ebd414a3-jsc-0-3-11 jsc@0.3.11
+39 silly lockFile ebd414a3-jsc-0-3-11 jsc@0.3.11
+40 silly lockFile 622fac06-jsc jsc@
+41 silly lockFile 622fac06-jsc jsc@
+42 silly resolved [ { name: 'jsc',
+42 silly resolved     version: '0.3.11',
+42 silly resolved     description: 'Javascript complexity tool',
+42 silly resolved     author: { name: 'Gleb Bahmutov', email: 'gleb.bahmutov@gmail.com' },
+42 silly resolved     repository:
+42 silly resolved      { type: 'git',
+42 silly resolved        url: 'https://github.com/bahmutov/js-complexity-viz.git' },
+42 silly resolved     keywords: [ 'code', 'complexity', 'code complexity', 'js', 'javascript' ],
+42 silly resolved     dependencies:
+42 silly resolved      { ggit: '0.0.5',
+42 silly resolved        'optional-color-logger': '0.0.6',
+42 silly resolved        'cli-color': '~0.2.3',
+42 silly resolved        sprintf: '~0.1.2',
+42 silly resolved        optimist: '~0.6.0',
+42 silly resolved        'custom-logger': '~0.2.1',
+42 silly resolved        'complexity-report': '~0.10.5',
+42 silly resolved        'check-types': '~0.6.5',
+42 silly resolved        'cli-table': '~0.2.0',
+42 silly resolved        colors: '~0.6.2',
+42 silly resolved        glob: '~3.2.6',
+42 silly resolved        gauss: '~0.2.8',
+42 silly resolved        lodash: '~2.2.1',
+42 silly resolved        moment: '~2.3.1',
+42 silly resolved        commander: '~2.0.0',
+42 silly resolved        'allong.es': '~0.14.0',
+42 silly resolved        'update-notifier': '~0.1.6' },
+42 silly resolved     devDependencies:
+42 silly resolved      { 'grunt-bump': '0.0.11',
+42 silly resolved        'grunt-contrib-jshint': '~0.6.4',
+42 silly resolved        grunt: '~0.4.1',
+42 silly resolved        gt: '~0.8.12' },
+42 silly resolved     engines: { node: '>= 0.8.0' },
+42 silly resolved     scripts:
+42 silly resolved      { test: 'node ./node_modules/gt ./test/filenames.js ./test/e2e.js',
+42 silly resolved        complexity: 'node js-complexity-viz *.js src/*.js' },
+42 silly resolved     license: 'MIT',
+42 silly resolved     preferGlobal: 'true',
+42 silly resolved     main: './js-complexity-viz.js',
+42 silly resolved     bin: { jsc: './js-complexity-viz.js' },
+42 silly resolved     readme: '# JSC (formerly js-complexity-viz)\n\n[![NPM info][nodei.co]](https://npmjs.org/package/jsc)\n\n[![Build status][ci-image]][ci-status]\n[![dependencies][dependencies-image]][dependencies-url]\n[![endorse][endorse-image]][endorse-url]\n\nJavaScript source code complexity tool\n\nThis is a runner/wrapper around Phil Booth\'s tool [*complexity report*](https://github.com/philbooth/complexityReport.js "Complexity report at github")\n\n## Install and run\n\n\tnpm install -g jsc\n\tjsc foo.js tests/*.js\n\nIt can also be installed locally and used from other modules. See *js-complexity-viz.js* source file.\n\nUse -h option to see all (few) options\n\nOutputs:\n\n1. *report.html* (based on template, uses Google charting library)\n2. *report.json* (collected js file complexity statistics)\n\nFor example, the html can be ingested into Jenkins build system when using *HTML publisher plugin*\n\n## License\n\nThe MIT License, see [*MIT-License.txt*](js-complexity-viz/blob/master/MIT-License.txt "MIT-License.txt")\n\n## Contact\n\nGleb Bahmutov <gleb.bahmutov@gmail.com>\n\n[ci-image]: https://secure.travis-ci.org/bahmutov/js-complexity-viz.png?branch=master\n[ci-status]: http://travis-ci.org/#!/bahmutov/js-complexity-viz\n[nodei.co]: https://nodei.co/npm/jsc.png?downloads=true\n[dependencies-image]: https://david-dm.org/bahmutov/js-complexity-viz.png\n[dependencies-url]: https://david-dm.org/bahmutov/js-complexity-viz\n[endorse-image]: https://api.coderwall.com/bahmutov/endorsecount.png\n[endorse-url]: https://coderwall.com/bahmutov\n',
+42 silly resolved     readmeFilename: 'README.md',
+42 silly resolved     bugs: { url: 'https://github.com/bahmutov/js-complexity-viz/issues' },
+42 silly resolved     _id: 'jsc@0.3.11',
+42 silly resolved     dist:
+42 silly resolved      { shasum: 'b8981c3bf6dac58e2843ff3ccff7c155344ee816',
+42 silly resolved        tarball: 'http://registry.npmjs.org/jsc/-/jsc-0.3.11.tgz' },
+42 silly resolved     _from: 'jsc@',
+42 silly resolved     _npmVersion: '1.3.11',
+42 silly resolved     _npmUser: { name: 'bahmutov', email: 'gleb.bahmutov@gmail.com' },
+42 silly resolved     maintainers: [ [Object] ],
+42 silly resolved     directories: {},
+42 silly resolved     _shasum: 'b8981c3bf6dac58e2843ff3ccff7c155344ee816',
+42 silly resolved     _resolved: 'https://registry.npmjs.org/jsc/-/jsc-0.3.11.tgz' } ]
+43 info install jsc@0.3.11 into /Users/jackjeffress/Google Drive/general_assembly/wdi-7/WDI_SYD_7
+44 info installOne jsc@0.3.11
+45 info /Users/jackjeffress/Google Drive/general_assembly/wdi-7/WDI_SYD_7/node_modules/jsc unbuild
+46 verbose tar unpack /Users/jackjeffress/.npm/jsc/0.3.11/package.tgz
+47 silly lockFile e2805dd8-wdi-7-WDI-SYD-7-node-modules-jsc tar:///Users/jackjeffress/Google Drive/general_assembly/wdi-7/WDI_SYD_7/node_modules/jsc
+48 verbose lock tar:///Users/jackjeffress/Google Drive/general_assembly/wdi-7/WDI_SYD_7/node_modules/jsc /Users/jackjeffress/.npm/e2805dd8-wdi-7-WDI-SYD-7-node-modules-jsc.lock
+49 silly lockFile f10a98c8-fress-npm-jsc-0-3-11-package-tgz tar:///Users/jackjeffress/.npm/jsc/0.3.11/package.tgz
+50 verbose lock tar:///Users/jackjeffress/.npm/jsc/0.3.11/package.tgz /Users/jackjeffress/.npm/f10a98c8-fress-npm-jsc-0-3-11-package-tgz.lock
+51 silly gunzTarPerm modes [ '755', '644' ]
+52 silly gunzTarPerm extractEntry package.json
+53 silly gunzTarPerm extractEntry .npmignore
+54 silly gunzTarPerm extractEntry README.md
+55 silly gunzTarPerm extractEntry Gruntfile.js
+56 silly gunzTarPerm extractEntry index.js
+57 silly gunzTarPerm extractEntry js-complexity-viz.js
+58 silly gunzTarPerm extractEntry experiments/multiple-options.js
+59 silly gunzTarPerm extractEntry experiments/A/foo.js
+60 silly gunzTarPerm extractEntry MIT-License.txt
+61 silly gunzTarPerm extractEntry .travis.yml
+62 silly gunzTarPerm extractEntry .jshintrc
+63 silly gunzTarPerm extractEntry src/Complexity.js
+64 silly gunzTarPerm extractEntry src/collector.js
+65 silly gunzTarPerm extractEntry src/history.js
+66 silly gunzTarPerm extractEntry src/js-complexity.js
+67 silly gunzTarPerm extractEntry src/arguments.js
+68 silly gunzTarPerm extractEntry src/sourceFiles.js
+69 silly gunzTarPerm extractEntry src/reportChange.js
+70 silly gunzTarPerm extractEntry src/reporter.js
+71 silly gunzTarPerm extractEntry src/utils.js
+72 silly gunzTarPerm extractEntry src/metrics.js
+73 silly gunzTarPerm extractEntry src/report.html
+74 silly gunzTarPerm extractEntry test/complexityTest.js
+75 silly gunzTarPerm extractEntry test/e2e.js
+76 silly gunzTarPerm extractEntry test/external.js
+77 silly gunzTarPerm extractEntry test/filenames.js
+78 silly gunzTarPerm extractEntry test/prefix.js
+79 silly gunzTarPerm extractEntry test/amd/withAmd.js
+80 silly gunzTarPerm extractEntry test/amd/withoutAmd.js
+81 silly gunzTarPerm extractEntry test/complexityExample.json
+82 silly gunzTarPerm extractEntry test/example_data.json
+83 silly gunzTarPerm extractEntry test/example_report.html
+84 silly lockFile e2805dd8-wdi-7-WDI-SYD-7-node-modules-jsc tar:///Users/jackjeffress/Google Drive/general_assembly/wdi-7/WDI_SYD_7/node_modules/jsc
+85 silly lockFile e2805dd8-wdi-7-WDI-SYD-7-node-modules-jsc tar:///Users/jackjeffress/Google Drive/general_assembly/wdi-7/WDI_SYD_7/node_modules/jsc
+86 silly lockFile f10a98c8-fress-npm-jsc-0-3-11-package-tgz tar:///Users/jackjeffress/.npm/jsc/0.3.11/package.tgz
+87 silly lockFile f10a98c8-fress-npm-jsc-0-3-11-package-tgz tar:///Users/jackjeffress/.npm/jsc/0.3.11/package.tgz
+88 info preinstall jsc@0.3.11
+89 verbose readDependencies using package.json deps
+90 verbose readDependencies using package.json deps
+91 verbose cache add [ 'ggit@0.0.5', null ]
+92 verbose cache add name=undefined spec="ggit@0.0.5" args=["ggit@0.0.5",null]
+93 verbose parsed url { protocol: null,
+93 verbose parsed url   slashes: null,
+93 verbose parsed url   auth: null,
+93 verbose parsed url   host: null,
+93 verbose parsed url   port: null,
+93 verbose parsed url   hostname: null,
+93 verbose parsed url   hash: null,
+93 verbose parsed url   search: null,
+93 verbose parsed url   query: null,
+93 verbose parsed url   pathname: 'ggit@0.0.5',
+93 verbose parsed url   path: 'ggit@0.0.5',
+93 verbose parsed url   href: 'ggit@0.0.5' }
+94 verbose cache add [ 'optional-color-logger@0.0.6', null ]
+95 verbose cache add name=undefined spec="optional-color-logger@0.0.6" args=["optional-color-logger@0.0.6",null]
+96 verbose parsed url { protocol: null,
+96 verbose parsed url   slashes: null,
+96 verbose parsed url   auth: null,
+96 verbose parsed url   host: null,
+96 verbose parsed url   port: null,
+96 verbose parsed url   hostname: null,
+96 verbose parsed url   hash: null,
+96 verbose parsed url   search: null,
+96 verbose parsed url   query: null,
+96 verbose parsed url   pathname: 'optional-color-logger@0.0.6',
+96 verbose parsed url   path: 'optional-color-logger@0.0.6',
+96 verbose parsed url   href: 'optional-color-logger@0.0.6' }
+97 verbose cache add name="ggit" spec="0.0.5" args=["ggit","0.0.5"]
+98 verbose parsed url { protocol: null,
+98 verbose parsed url   slashes: null,
+98 verbose parsed url   auth: null,
+98 verbose parsed url   host: null,
+98 verbose parsed url   port: null,
+98 verbose parsed url   hostname: null,
+98 verbose parsed url   hash: null,
+98 verbose parsed url   search: null,
+98 verbose parsed url   query: null,
+98 verbose parsed url   pathname: '0.0.5',
+98 verbose parsed url   path: '0.0.5',
+98 verbose parsed url   href: '0.0.5' }
+99 verbose addNamed [ 'ggit', '0.0.5' ]
+100 verbose addNamed [ '0.0.5', '0.0.5' ]
+101 silly lockFile 3419ce5e-ggit-0-0-5 ggit@0.0.5
+102 verbose lock ggit@0.0.5 /Users/jackjeffress/.npm/3419ce5e-ggit-0-0-5.lock
+103 verbose cache add [ 'cli-color@~0.2.3', null ]
+104 verbose cache add name=undefined spec="cli-color@~0.2.3" args=["cli-color@~0.2.3",null]
+105 verbose parsed url { protocol: null,
+105 verbose parsed url   slashes: null,
+105 verbose parsed url   auth: null,
+105 verbose parsed url   host: null,
+105 verbose parsed url   port: null,
+105 verbose parsed url   hostname: null,
+105 verbose parsed url   hash: null,
+105 verbose parsed url   search: null,
+105 verbose parsed url   query: null,
+105 verbose parsed url   pathname: 'cli-color@~0.2.3',
+105 verbose parsed url   path: 'cli-color@~0.2.3',
+105 verbose parsed url   href: 'cli-color@~0.2.3' }
+106 verbose cache add name="optional-color-logger" spec="0.0.6" args=["optional-color-logger","0.0.6"]
+107 verbose parsed url { protocol: null,
+107 verbose parsed url   slashes: null,
+107 verbose parsed url   auth: null,
+107 verbose parsed url   host: null,
+107 verbose parsed url   port: null,
+107 verbose parsed url   hostname: null,
+107 verbose parsed url   hash: null,
+107 verbose parsed url   search: null,
+107 verbose parsed url   query: null,
+107 verbose parsed url   pathname: '0.0.6',
+107 verbose parsed url   path: '0.0.6',
+107 verbose parsed url   href: '0.0.6' }
+108 verbose addNamed [ 'optional-color-logger', '0.0.6' ]
+109 verbose addNamed [ '0.0.6', '0.0.6' ]
+110 silly lockFile 83480199-optional-color-logger-0-0-6 optional-color-logger@0.0.6
+111 verbose lock optional-color-logger@0.0.6 /Users/jackjeffress/.npm/83480199-optional-color-logger-0-0-6.lock
+112 verbose cache add name="cli-color" spec="~0.2.3" args=["cli-color","~0.2.3"]
+113 verbose parsed url { protocol: null,
+113 verbose parsed url   slashes: null,
+113 verbose parsed url   auth: null,
+113 verbose parsed url   host: null,
+113 verbose parsed url   port: null,
+113 verbose parsed url   hostname: null,
+113 verbose parsed url   hash: null,
+113 verbose parsed url   search: null,
+113 verbose parsed url   query: null,
+113 verbose parsed url   pathname: '~0.2.3',
+113 verbose parsed url   path: '~0.2.3',
+113 verbose parsed url   href: '~0.2.3' }
+114 verbose addNamed [ 'cli-color', '~0.2.3' ]
+115 verbose addNamed [ null, '>=0.2.3-0 <0.3.0-0' ]
+116 silly lockFile 5e3d31f2-cli-color-0-2-3 cli-color@~0.2.3
+117 verbose lock cli-color@~0.2.3 /Users/jackjeffress/.npm/5e3d31f2-cli-color-0-2-3.lock
+118 verbose cache add [ 'sprintf@~0.1.2', null ]
+119 verbose cache add name=undefined spec="sprintf@~0.1.2" args=["sprintf@~0.1.2",null]
+120 verbose parsed url { protocol: null,
+120 verbose parsed url   slashes: null,
+120 verbose parsed url   auth: null,
+120 verbose parsed url   host: null,
+120 verbose parsed url   port: null,
+120 verbose parsed url   hostname: null,
+120 verbose parsed url   hash: null,
+120 verbose parsed url   search: null,
+120 verbose parsed url   query: null,
+120 verbose parsed url   pathname: 'sprintf@~0.1.2',
+120 verbose parsed url   path: 'sprintf@~0.1.2',
+120 verbose parsed url   href: 'sprintf@~0.1.2' }
+121 verbose cache add [ 'optimist@~0.6.0', null ]
+122 verbose cache add name=undefined spec="optimist@~0.6.0" args=["optimist@~0.6.0",null]
+123 verbose parsed url { protocol: null,
+123 verbose parsed url   slashes: null,
+123 verbose parsed url   auth: null,
+123 verbose parsed url   host: null,
+123 verbose parsed url   port: null,
+123 verbose parsed url   hostname: null,
+123 verbose parsed url   hash: null,
+123 verbose parsed url   search: null,
+123 verbose parsed url   query: null,
+123 verbose parsed url   pathname: 'optimist@~0.6.0',
+123 verbose parsed url   path: 'optimist@~0.6.0',
+123 verbose parsed url   href: 'optimist@~0.6.0' }
+124 verbose cache add name="sprintf" spec="~0.1.2" args=["sprintf","~0.1.2"]
+125 verbose parsed url { protocol: null,
+125 verbose parsed url   slashes: null,
+125 verbose parsed url   auth: null,
+125 verbose parsed url   host: null,
+125 verbose parsed url   port: null,
+125 verbose parsed url   hostname: null,
+125 verbose parsed url   hash: null,
+125 verbose parsed url   search: null,
+125 verbose parsed url   query: null,
+125 verbose parsed url   pathname: '~0.1.2',
+125 verbose parsed url   path: '~0.1.2',
+125 verbose parsed url   href: '~0.1.2' }
+126 verbose addNamed [ 'sprintf', '~0.1.2' ]
+127 verbose addNamed [ null, '>=0.1.2-0 <0.2.0-0' ]
+128 silly lockFile d9082a97-sprintf-0-1-2 sprintf@~0.1.2
+129 verbose lock sprintf@~0.1.2 /Users/jackjeffress/.npm/d9082a97-sprintf-0-1-2.lock
+130 silly addNameRange { name: 'cli-color',
+130 silly addNameRange   range: '>=0.2.3-0 <0.3.0-0',
+130 silly addNameRange   hasData: false }
+131 verbose cache add [ 'custom-logger@~0.2.1', null ]
+132 verbose cache add name=undefined spec="custom-logger@~0.2.1" args=["custom-logger@~0.2.1",null]
+133 verbose parsed url { protocol: null,
+133 verbose parsed url   slashes: null,
+133 verbose parsed url   auth: null,
+133 verbose parsed url   host: null,
+133 verbose parsed url   port: null,
+133 verbose parsed url   hostname: null,
+133 verbose parsed url   hash: null,
+133 verbose parsed url   search: null,
+133 verbose parsed url   query: null,
+133 verbose parsed url   pathname: 'custom-logger@~0.2.1',
+133 verbose parsed url   path: 'custom-logger@~0.2.1',
+133 verbose parsed url   href: 'custom-logger@~0.2.1' }
+134 verbose cache add name="optimist" spec="~0.6.0" args=["optimist","~0.6.0"]
+135 verbose parsed url { protocol: null,
+135 verbose parsed url   slashes: null,
+135 verbose parsed url   auth: null,
+135 verbose parsed url   host: null,
+135 verbose parsed url   port: null,
+135 verbose parsed url   hostname: null,
+135 verbose parsed url   hash: null,
+135 verbose parsed url   search: null,
+135 verbose parsed url   query: null,
+135 verbose parsed url   pathname: '~0.6.0',
+135 verbose parsed url   path: '~0.6.0',
+135 verbose parsed url   href: '~0.6.0' }
+136 verbose addNamed [ 'optimist', '~0.6.0' ]
+137 verbose addNamed [ null, '>=0.6.0-0 <0.7.0-0' ]
+138 silly lockFile 07193858-optimist-0-6-0 optimist@~0.6.0
+139 verbose lock optimist@~0.6.0 /Users/jackjeffress/.npm/07193858-optimist-0-6-0.lock
+140 verbose url raw ggit
+141 verbose url resolving [ 'https://registry.npmjs.org/', './ggit' ]
+142 verbose url resolved https://registry.npmjs.org/ggit
+143 info trying registry request attempt 1 at 15:06:44
+144 http GET https://registry.npmjs.org/ggit
+145 verbose url raw optional-color-logger
+146 verbose url resolving [ 'https://registry.npmjs.org/', './optional-color-logger' ]
+147 verbose url resolved https://registry.npmjs.org/optional-color-logger
+148 info trying registry request attempt 1 at 15:06:44
+149 http GET https://registry.npmjs.org/optional-color-logger
+150 verbose cache add [ 'check-types@~0.6.5', null ]
+151 verbose cache add name=undefined spec="check-types@~0.6.5" args=["check-types@~0.6.5",null]
+152 verbose parsed url { protocol: null,
+152 verbose parsed url   slashes: null,
+152 verbose parsed url   auth: null,
+152 verbose parsed url   host: null,
+152 verbose parsed url   port: null,
+152 verbose parsed url   hostname: null,
+152 verbose parsed url   hash: null,
+152 verbose parsed url   search: null,
+152 verbose parsed url   query: null,
+152 verbose parsed url   pathname: 'check-types@~0.6.5',
+152 verbose parsed url   path: 'check-types@~0.6.5',
+152 verbose parsed url   href: 'check-types@~0.6.5' }
+153 verbose cache add [ 'complexity-report@~0.10.5', null ]
+154 verbose cache add name=undefined spec="complexity-report@~0.10.5" args=["complexity-report@~0.10.5",null]
+155 verbose parsed url { protocol: null,
+155 verbose parsed url   slashes: null,
+155 verbose parsed url   auth: null,
+155 verbose parsed url   host: null,
+155 verbose parsed url   port: null,
+155 verbose parsed url   hostname: null,
+155 verbose parsed url   hash: null,
+155 verbose parsed url   search: null,
+155 verbose parsed url   query: null,
+155 verbose parsed url   pathname: 'complexity-report@~0.10.5',
+155 verbose parsed url   path: 'complexity-report@~0.10.5',
+155 verbose parsed url   href: 'complexity-report@~0.10.5' }
+156 verbose cache add [ 'cli-table@~0.2.0', null ]
+157 verbose cache add name=undefined spec="cli-table@~0.2.0" args=["cli-table@~0.2.0",null]
+158 verbose parsed url { protocol: null,
+158 verbose parsed url   slashes: null,
+158 verbose parsed url   auth: null,
+158 verbose parsed url   host: null,
+158 verbose parsed url   port: null,
+158 verbose parsed url   hostname: null,
+158 verbose parsed url   hash: null,
+158 verbose parsed url   search: null,
+158 verbose parsed url   query: null,
+158 verbose parsed url   pathname: 'cli-table@~0.2.0',
+158 verbose parsed url   path: 'cli-table@~0.2.0',
+158 verbose parsed url   href: 'cli-table@~0.2.0' }
+159 verbose cache add [ 'colors@~0.6.2', null ]
+160 verbose cache add name=undefined spec="colors@~0.6.2" args=["colors@~0.6.2",null]
+161 verbose parsed url { protocol: null,
+161 verbose parsed url   slashes: null,
+161 verbose parsed url   auth: null,
+161 verbose parsed url   host: null,
+161 verbose parsed url   port: null,
+161 verbose parsed url   hostname: null,
+161 verbose parsed url   hash: null,
+161 verbose parsed url   search: null,
+161 verbose parsed url   query: null,
+161 verbose parsed url   pathname: 'colors@~0.6.2',
+161 verbose parsed url   path: 'colors@~0.6.2',
+161 verbose parsed url   href: 'colors@~0.6.2' }
+162 verbose cache add [ 'glob@~3.2.6', null ]
+163 verbose cache add name=undefined spec="glob@~3.2.6" args=["glob@~3.2.6",null]
+164 verbose parsed url { protocol: null,
+164 verbose parsed url   slashes: null,
+164 verbose parsed url   auth: null,
+164 verbose parsed url   host: null,
+164 verbose parsed url   port: null,
+164 verbose parsed url   hostname: null,
+164 verbose parsed url   hash: null,
+164 verbose parsed url   search: null,
+164 verbose parsed url   query: null,
+164 verbose parsed url   pathname: 'glob@~3.2.6',
+164 verbose parsed url   path: 'glob@~3.2.6',
+164 verbose parsed url   href: 'glob@~3.2.6' }
+165 verbose cache add name="custom-logger" spec="~0.2.1" args=["custom-logger","~0.2.1"]
+166 verbose parsed url { protocol: null,
+166 verbose parsed url   slashes: null,
+166 verbose parsed url   auth: null,
+166 verbose parsed url   host: null,
+166 verbose parsed url   port: null,
+166 verbose parsed url   hostname: null,
+166 verbose parsed url   hash: null,
+166 verbose parsed url   search: null,
+166 verbose parsed url   query: null,
+166 verbose parsed url   pathname: '~0.2.1',
+166 verbose parsed url   path: '~0.2.1',
+166 verbose parsed url   href: '~0.2.1' }
+167 verbose addNamed [ 'custom-logger', '~0.2.1' ]
+168 verbose addNamed [ null, '>=0.2.1-0 <0.3.0-0' ]
+169 silly lockFile a1b642cf-custom-logger-0-2-1 custom-logger@~0.2.1
+170 verbose lock custom-logger@~0.2.1 /Users/jackjeffress/.npm/a1b642cf-custom-logger-0-2-1.lock
+171 silly addNameRange { name: 'sprintf', range: '>=0.1.2-0 <0.2.0-0', hasData: false }
+172 verbose cache add name="check-types" spec="~0.6.5" args=["check-types","~0.6.5"]
+173 verbose parsed url { protocol: null,
+173 verbose parsed url   slashes: null,
+173 verbose parsed url   auth: null,
+173 verbose parsed url   host: null,
+173 verbose parsed url   port: null,
+173 verbose parsed url   hostname: null,
+173 verbose parsed url   hash: null,
+173 verbose parsed url   search: null,
+173 verbose parsed url   query: null,
+173 verbose parsed url   pathname: '~0.6.5',
+173 verbose parsed url   path: '~0.6.5',
+173 verbose parsed url   href: '~0.6.5' }
+174 verbose addNamed [ 'check-types', '~0.6.5' ]
+175 verbose addNamed [ null, '>=0.6.5-0 <0.7.0-0' ]
+176 silly lockFile 7fb522cf-check-types-0-6-5 check-types@~0.6.5
+177 verbose lock check-types@~0.6.5 /Users/jackjeffress/.npm/7fb522cf-check-types-0-6-5.lock
+178 verbose cache add name="complexity-report" spec="~0.10.5" args=["complexity-report","~0.10.5"]
+179 verbose parsed url { protocol: null,
+179 verbose parsed url   slashes: null,
+179 verbose parsed url   auth: null,
+179 verbose parsed url   host: null,
+179 verbose parsed url   port: null,
+179 verbose parsed url   hostname: null,
+179 verbose parsed url   hash: null,
+179 verbose parsed url   search: null,
+179 verbose parsed url   query: null,
+179 verbose parsed url   pathname: '~0.10.5',
+179 verbose parsed url   path: '~0.10.5',
+179 verbose parsed url   href: '~0.10.5' }
+180 verbose addNamed [ 'complexity-report', '~0.10.5' ]
+181 verbose addNamed [ null, '>=0.10.5-0 <0.11.0-0' ]
+182 silly lockFile 28cd6446-complexity-report-0-10-5 complexity-report@~0.10.5
+183 verbose lock complexity-report@~0.10.5 /Users/jackjeffress/.npm/28cd6446-complexity-report-0-10-5.lock
+184 verbose cache add name="cli-table" spec="~0.2.0" args=["cli-table","~0.2.0"]
+185 verbose parsed url { protocol: null,
+185 verbose parsed url   slashes: null,
+185 verbose parsed url   auth: null,
+185 verbose parsed url   host: null,
+185 verbose parsed url   port: null,
+185 verbose parsed url   hostname: null,
+185 verbose parsed url   hash: null,
+185 verbose parsed url   search: null,
+185 verbose parsed url   query: null,
+185 verbose parsed url   pathname: '~0.2.0',
+185 verbose parsed url   path: '~0.2.0',
+185 verbose parsed url   href: '~0.2.0' }
+186 verbose addNamed [ 'cli-table', '~0.2.0' ]
+187 verbose addNamed [ null, '>=0.2.0-0 <0.3.0-0' ]
+188 silly lockFile cb7ccf1d-cli-table-0-2-0 cli-table@~0.2.0
+189 verbose lock cli-table@~0.2.0 /Users/jackjeffress/.npm/cb7ccf1d-cli-table-0-2-0.lock
+190 verbose cache add name="colors" spec="~0.6.2" args=["colors","~0.6.2"]
+191 verbose parsed url { protocol: null,
+191 verbose parsed url   slashes: null,
+191 verbose parsed url   auth: null,
+191 verbose parsed url   host: null,
+191 verbose parsed url   port: null,
+191 verbose parsed url   hostname: null,
+191 verbose parsed url   hash: null,
+191 verbose parsed url   search: null,
+191 verbose parsed url   query: null,
+191 verbose parsed url   pathname: '~0.6.2',
+191 verbose parsed url   path: '~0.6.2',
+191 verbose parsed url   href: '~0.6.2' }
+192 verbose addNamed [ 'colors', '~0.6.2' ]
+193 verbose addNamed [ null, '>=0.6.2-0 <0.7.0-0' ]
+194 silly lockFile f2380b4d-colors-0-6-2 colors@~0.6.2
+195 verbose lock colors@~0.6.2 /Users/jackjeffress/.npm/f2380b4d-colors-0-6-2.lock
+196 verbose cache add [ 'gauss@~0.2.8', null ]
+197 verbose cache add name=undefined spec="gauss@~0.2.8" args=["gauss@~0.2.8",null]
+198 verbose parsed url { protocol: null,
+198 verbose parsed url   slashes: null,
+198 verbose parsed url   auth: null,
+198 verbose parsed url   host: null,
+198 verbose parsed url   port: null,
+198 verbose parsed url   hostname: null,
+198 verbose parsed url   hash: null,
+198 verbose parsed url   search: null,
+198 verbose parsed url   query: null,
+198 verbose parsed url   pathname: 'gauss@~0.2.8',
+198 verbose parsed url   path: 'gauss@~0.2.8',
+198 verbose parsed url   href: 'gauss@~0.2.8' }
+199 verbose cache add [ 'lodash@~2.2.1', null ]
+200 verbose cache add name=undefined spec="lodash@~2.2.1" args=["lodash@~2.2.1",null]
+201 verbose parsed url { protocol: null,
+201 verbose parsed url   slashes: null,
+201 verbose parsed url   auth: null,
+201 verbose parsed url   host: null,
+201 verbose parsed url   port: null,
+201 verbose parsed url   hostname: null,
+201 verbose parsed url   hash: null,
+201 verbose parsed url   search: null,
+201 verbose parsed url   query: null,
+201 verbose parsed url   pathname: 'lodash@~2.2.1',
+201 verbose parsed url   path: 'lodash@~2.2.1',
+201 verbose parsed url   href: 'lodash@~2.2.1' }
+202 verbose cache add [ 'moment@~2.3.1', null ]
+203 verbose cache add name=undefined spec="moment@~2.3.1" args=["moment@~2.3.1",null]
+204 verbose parsed url { protocol: null,
+204 verbose parsed url   slashes: null,
+204 verbose parsed url   auth: null,
+204 verbose parsed url   host: null,
+204 verbose parsed url   port: null,
+204 verbose parsed url   hostname: null,
+204 verbose parsed url   hash: null,
+204 verbose parsed url   search: null,
+204 verbose parsed url   query: null,
+204 verbose parsed url   pathname: 'moment@~2.3.1',
+204 verbose parsed url   path: 'moment@~2.3.1',
+204 verbose parsed url   href: 'moment@~2.3.1' }
+205 verbose cache add [ 'commander@~2.0.0', null ]
+206 verbose cache add name=undefined spec="commander@~2.0.0" args=["commander@~2.0.0",null]
+207 verbose parsed url { protocol: null,
+207 verbose parsed url   slashes: null,
+207 verbose parsed url   auth: null,
+207 verbose parsed url   host: null,
+207 verbose parsed url   port: null,
+207 verbose parsed url   hostname: null,
+207 verbose parsed url   hash: null,
+207 verbose parsed url   search: null,
+207 verbose parsed url   query: null,
+207 verbose parsed url   pathname: 'commander@~2.0.0',
+207 verbose parsed url   path: 'commander@~2.0.0',
+207 verbose parsed url   href: 'commander@~2.0.0' }
+208 verbose cache add [ 'allong.es@~0.14.0', null ]
+209 verbose cache add name=undefined spec="allong.es@~0.14.0" args=["allong.es@~0.14.0",null]
+210 verbose parsed url { protocol: null,
+210 verbose parsed url   slashes: null,
+210 verbose parsed url   auth: null,
+210 verbose parsed url   host: null,
+210 verbose parsed url   port: null,
+210 verbose parsed url   hostname: null,
+210 verbose parsed url   hash: null,
+210 verbose parsed url   search: null,
+210 verbose parsed url   query: null,
+210 verbose parsed url   pathname: 'allong.es@~0.14.0',
+210 verbose parsed url   path: 'allong.es@~0.14.0',
+210 verbose parsed url   href: 'allong.es@~0.14.0' }
+211 verbose cache add name="glob" spec="~3.2.6" args=["glob","~3.2.6"]
+212 verbose parsed url { protocol: null,
+212 verbose parsed url   slashes: null,
+212 verbose parsed url   auth: null,
+212 verbose parsed url   host: null,
+212 verbose parsed url   port: null,
+212 verbose parsed url   hostname: null,
+212 verbose parsed url   hash: null,
+212 verbose parsed url   search: null,
+212 verbose parsed url   query: null,
+212 verbose parsed url   pathname: '~3.2.6',
+212 verbose parsed url   path: '~3.2.6',
+212 verbose parsed url   href: '~3.2.6' }
+213 verbose addNamed [ 'glob', '~3.2.6' ]
+214 verbose addNamed [ null, '>=3.2.6-0 <3.3.0-0' ]
+215 silly lockFile a8f04318-glob-3-2-6 glob@~3.2.6
+216 verbose lock glob@~3.2.6 /Users/jackjeffress/.npm/a8f04318-glob-3-2-6.lock
+217 silly addNameRange { name: 'optimist', range: '>=0.6.0-0 <0.7.0-0', hasData: false }
+218 verbose url raw sprintf
+219 verbose url resolving [ 'https://registry.npmjs.org/', './sprintf' ]
+220 verbose url resolved https://registry.npmjs.org/sprintf
+221 info trying registry request attempt 1 at 15:06:44
+222 http GET https://registry.npmjs.org/sprintf
+223 verbose cache add name="gauss" spec="~0.2.8" args=["gauss","~0.2.8"]
+224 verbose parsed url { protocol: null,
+224 verbose parsed url   slashes: null,
+224 verbose parsed url   auth: null,
+224 verbose parsed url   host: null,
+224 verbose parsed url   port: null,
+224 verbose parsed url   hostname: null,
+224 verbose parsed url   hash: null,
+224 verbose parsed url   search: null,
+224 verbose parsed url   query: null,
+224 verbose parsed url   pathname: '~0.2.8',
+224 verbose parsed url   path: '~0.2.8',
+224 verbose parsed url   href: '~0.2.8' }
+225 verbose addNamed [ 'gauss', '~0.2.8' ]
+226 verbose addNamed [ null, '>=0.2.8-0 <0.3.0-0' ]
+227 silly lockFile e94fdf66-gauss-0-2-8 gauss@~0.2.8
+228 verbose lock gauss@~0.2.8 /Users/jackjeffress/.npm/e94fdf66-gauss-0-2-8.lock
+229 verbose cache add name="lodash" spec="~2.2.1" args=["lodash","~2.2.1"]
+230 verbose parsed url { protocol: null,
+230 verbose parsed url   slashes: null,
+230 verbose parsed url   auth: null,
+230 verbose parsed url   host: null,
+230 verbose parsed url   port: null,
+230 verbose parsed url   hostname: null,
+230 verbose parsed url   hash: null,
+230 verbose parsed url   search: null,
+230 verbose parsed url   query: null,
+230 verbose parsed url   pathname: '~2.2.1',
+230 verbose parsed url   path: '~2.2.1',
+230 verbose parsed url   href: '~2.2.1' }
+231 verbose addNamed [ 'lodash', '~2.2.1' ]
+232 verbose addNamed [ null, '>=2.2.1-0 <2.3.0-0' ]
+233 silly lockFile c46ab6b5-lodash-2-2-1 lodash@~2.2.1
+234 verbose lock lodash@~2.2.1 /Users/jackjeffress/.npm/c46ab6b5-lodash-2-2-1.lock
+235 verbose cache add name="moment" spec="~2.3.1" args=["moment","~2.3.1"]
+236 verbose parsed url { protocol: null,
+236 verbose parsed url   slashes: null,
+236 verbose parsed url   auth: null,
+236 verbose parsed url   host: null,
+236 verbose parsed url   port: null,
+236 verbose parsed url   hostname: null,
+236 verbose parsed url   hash: null,
+236 verbose parsed url   search: null,
+236 verbose parsed url   query: null,
+236 verbose parsed url   pathname: '~2.3.1',
+236 verbose parsed url   path: '~2.3.1',
+236 verbose parsed url   href: '~2.3.1' }
+237 verbose addNamed [ 'moment', '~2.3.1' ]
+238 verbose addNamed [ null, '>=2.3.1-0 <2.4.0-0' ]
+239 silly lockFile e2f10765-moment-2-3-1 moment@~2.3.1
+240 verbose lock moment@~2.3.1 /Users/jackjeffress/.npm/e2f10765-moment-2-3-1.lock
+241 verbose cache add name="commander" spec="~2.0.0" args=["commander","~2.0.0"]
+242 verbose parsed url { protocol: null,
+242 verbose parsed url   slashes: null,
+242 verbose parsed url   auth: null,
+242 verbose parsed url   host: null,
+242 verbose parsed url   port: null,
+242 verbose parsed url   hostname: null,
+242 verbose parsed url   hash: null,
+242 verbose parsed url   search: null,
+242 verbose parsed url   query: null,
+242 verbose parsed url   pathname: '~2.0.0',
+242 verbose parsed url   path: '~2.0.0',
+242 verbose parsed url   href: '~2.0.0' }
+243 verbose addNamed [ 'commander', '~2.0.0' ]
+244 verbose addNamed [ null, '>=2.0.0-0 <2.1.0-0' ]
+245 silly lockFile 00733c5f-commander-2-0-0 commander@~2.0.0
+246 verbose lock commander@~2.0.0 /Users/jackjeffress/.npm/00733c5f-commander-2-0-0.lock
+247 verbose cache add [ 'update-notifier@~0.1.6', null ]
+248 verbose cache add name=undefined spec="update-notifier@~0.1.6" args=["update-notifier@~0.1.6",null]
+249 verbose parsed url { protocol: null,
+249 verbose parsed url   slashes: null,
+249 verbose parsed url   auth: null,
+249 verbose parsed url   host: null,
+249 verbose parsed url   port: null,
+249 verbose parsed url   hostname: null,
+249 verbose parsed url   hash: null,
+249 verbose parsed url   search: null,
+249 verbose parsed url   query: null,
+249 verbose parsed url   pathname: 'update-notifier@~0.1.6',
+249 verbose parsed url   path: 'update-notifier@~0.1.6',
+249 verbose parsed url   href: 'update-notifier@~0.1.6' }
+250 verbose cache add name="allong.es" spec="~0.14.0" args=["allong.es","~0.14.0"]
+251 verbose parsed url { protocol: null,
+251 verbose parsed url   slashes: null,
+251 verbose parsed url   auth: null,
+251 verbose parsed url   host: null,
+251 verbose parsed url   port: null,
+251 verbose parsed url   hostname: null,
+251 verbose parsed url   hash: null,
+251 verbose parsed url   search: null,
+251 verbose parsed url   query: null,
+251 verbose parsed url   pathname: '~0.14.0',
+251 verbose parsed url   path: '~0.14.0',
+251 verbose parsed url   href: '~0.14.0' }
+252 verbose addNamed [ 'allong.es', '~0.14.0' ]
+253 verbose addNamed [ null, '>=0.14.0-0 <0.15.0-0' ]
+254 silly lockFile 6371c189-allong-es-0-14-0 allong.es@~0.14.0
+255 verbose lock allong.es@~0.14.0 /Users/jackjeffress/.npm/6371c189-allong-es-0-14-0.lock
+256 silly addNameRange { name: 'custom-logger',
+256 silly addNameRange   range: '>=0.2.1-0 <0.3.0-0',
+256 silly addNameRange   hasData: false }
+257 silly addNameRange { name: 'check-types',
+257 silly addNameRange   range: '>=0.6.5-0 <0.7.0-0',
+257 silly addNameRange   hasData: false }
+258 silly addNameRange { name: 'complexity-report',
+258 silly addNameRange   range: '>=0.10.5-0 <0.11.0-0',
+258 silly addNameRange   hasData: false }
+259 silly addNameRange { name: 'cli-table',
+259 silly addNameRange   range: '>=0.2.0-0 <0.3.0-0',
+259 silly addNameRange   hasData: false }
+260 silly addNameRange { name: 'colors', range: '>=0.6.2-0 <0.7.0-0', hasData: false }
+261 verbose cache add name="update-notifier" spec="~0.1.6" args=["update-notifier","~0.1.6"]
+262 verbose parsed url { protocol: null,
+262 verbose parsed url   slashes: null,
+262 verbose parsed url   auth: null,
+262 verbose parsed url   host: null,
+262 verbose parsed url   port: null,
+262 verbose parsed url   hostname: null,
+262 verbose parsed url   hash: null,
+262 verbose parsed url   search: null,
+262 verbose parsed url   query: null,
+262 verbose parsed url   pathname: '~0.1.6',
+262 verbose parsed url   path: '~0.1.6',
+262 verbose parsed url   href: '~0.1.6' }
+263 verbose addNamed [ 'update-notifier', '~0.1.6' ]
+264 verbose addNamed [ null, '>=0.1.6-0 <0.2.0-0' ]
+265 silly lockFile 7dc1cb07-update-notifier-0-1-6 update-notifier@~0.1.6
+266 verbose lock update-notifier@~0.1.6 /Users/jackjeffress/.npm/7dc1cb07-update-notifier-0-1-6.lock
+267 silly addNameRange { name: 'glob', range: '>=3.2.6-0 <3.3.0-0', hasData: false }
+268 verbose url raw custom-logger
+269 verbose url resolving [ 'https://registry.npmjs.org/', './custom-logger' ]
+270 verbose url resolved https://registry.npmjs.org/custom-logger
+271 info trying registry request attempt 1 at 15:06:44
+272 http GET https://registry.npmjs.org/custom-logger
+273 verbose url raw cli-color
+274 verbose url resolving [ 'https://registry.npmjs.org/', './cli-color' ]
+275 verbose url resolved https://registry.npmjs.org/cli-color
+276 info trying registry request attempt 1 at 15:06:44
+277 verbose etag "4XLCUAV98VTMCOJK021MPPDHR"
+278 http GET https://registry.npmjs.org/cli-color
+279 verbose url raw check-types
+280 verbose url resolving [ 'https://registry.npmjs.org/', './check-types' ]
+281 verbose url resolved https://registry.npmjs.org/check-types
+282 info trying registry request attempt 1 at 15:06:45
+283 http GET https://registry.npmjs.org/check-types
+284 verbose url raw complexity-report
+285 verbose url resolving [ 'https://registry.npmjs.org/', './complexity-report' ]
+286 verbose url resolved https://registry.npmjs.org/complexity-report
+287 info trying registry request attempt 1 at 15:06:45
+288 http GET https://registry.npmjs.org/complexity-report
+289 verbose url raw cli-table
+290 verbose url resolving [ 'https://registry.npmjs.org/', './cli-table' ]
+291 verbose url resolved https://registry.npmjs.org/cli-table
+292 info trying registry request attempt 1 at 15:06:45
+293 http GET https://registry.npmjs.org/cli-table
+294 silly addNameRange { name: 'gauss', range: '>=0.2.8-0 <0.3.0-0', hasData: false }
+295 silly addNameRange { name: 'lodash', range: '>=2.2.1-0 <2.3.0-0', hasData: false }
+296 silly addNameRange { name: 'moment', range: '>=2.3.1-0 <2.4.0-0', hasData: false }
+297 silly addNameRange { name: 'commander',
+297 silly addNameRange   range: '>=2.0.0-0 <2.1.0-0',
+297 silly addNameRange   hasData: false }
+298 silly addNameRange { name: 'allong.es',
+298 silly addNameRange   range: '>=0.14.0-0 <0.15.0-0',
+298 silly addNameRange   hasData: false }
+299 verbose url raw gauss
+300 verbose url resolving [ 'https://registry.npmjs.org/', './gauss' ]
+301 verbose url resolved https://registry.npmjs.org/gauss
+302 info trying registry request attempt 1 at 15:06:45
+303 http GET https://registry.npmjs.org/gauss
+304 verbose url raw moment
+305 verbose url resolving [ 'https://registry.npmjs.org/', './moment' ]
+306 verbose url resolved https://registry.npmjs.org/moment
+307 info trying registry request attempt 1 at 15:06:45
+308 http GET https://registry.npmjs.org/moment
+309 silly addNameRange { name: 'update-notifier',
+309 silly addNameRange   range: '>=0.1.6-0 <0.2.0-0',
+309 silly addNameRange   hasData: false }
+310 verbose url raw allong.es
+311 verbose url resolving [ 'https://registry.npmjs.org/', './allong.es' ]
+312 verbose url resolved https://registry.npmjs.org/allong.es
+313 info trying registry request attempt 1 at 15:06:45
+314 http GET https://registry.npmjs.org/allong.es
+315 verbose url raw optimist
+316 verbose url resolving [ 'https://registry.npmjs.org/', './optimist' ]
+317 verbose url resolved https://registry.npmjs.org/optimist
+318 info trying registry request attempt 1 at 15:06:45
+319 verbose etag "ENK6FKQU33JS25I7T7VX0R58A"
+320 http GET https://registry.npmjs.org/optimist
+321 verbose url raw colors
+322 verbose url resolving [ 'https://registry.npmjs.org/', './colors' ]
+323 verbose url resolved https://registry.npmjs.org/colors
+324 info trying registry request attempt 1 at 15:06:45
+325 verbose etag "441SFET328JZEOJ1G35MS8DD5"
+326 http GET https://registry.npmjs.org/colors
+327 verbose url raw glob
+328 verbose url resolving [ 'https://registry.npmjs.org/', './glob' ]
+329 verbose url resolved https://registry.npmjs.org/glob
+330 info trying registry request attempt 1 at 15:06:45
+331 verbose etag "66KZOU6YT2ULO5K7OZ8M8E4G2"
+332 http GET https://registry.npmjs.org/glob
+333 verbose url raw lodash
+334 verbose url resolving [ 'https://registry.npmjs.org/', './lodash' ]
+335 verbose url resolved https://registry.npmjs.org/lodash
+336 info trying registry request attempt 1 at 15:06:45
+337 verbose etag "3DP2H7IT4FZRQM65DJ8DHHK5O"
+338 http GET https://registry.npmjs.org/lodash
+339 verbose url raw commander
+340 verbose url resolving [ 'https://registry.npmjs.org/', './commander' ]
+341 verbose url resolved https://registry.npmjs.org/commander
+342 info trying registry request attempt 1 at 15:06:45
+343 verbose etag "6P6NVCVWXETIN7NDOQ9BWSI78"
+344 http GET https://registry.npmjs.org/commander
+345 verbose url raw update-notifier
+346 verbose url resolving [ 'https://registry.npmjs.org/', './update-notifier' ]
+347 verbose url resolved https://registry.npmjs.org/update-notifier
+348 info trying registry request attempt 1 at 15:06:45
+349 verbose etag "6N8ZYRH58CIGP2I21GOHVJDI9"
+350 http GET https://registry.npmjs.org/update-notifier
+351 http 304 https://registry.npmjs.org/cli-color
+352 silly registry.get cb [ 304,
+352 silly registry.get   { date: 'Tue, 25 Nov 2014 04:06:45 GMT',
+352 silly registry.get     server: 'Apache',
+352 silly registry.get     via: '1.1 varnish',
+352 silly registry.get     'last-modified': 'Tue, 25 Nov 2014 04:06:45 GMT',
+352 silly registry.get     'cache-control': 'max-age=60',
+352 silly registry.get     etag: '"4XLCUAV98VTMCOJK021MPPDHR"',
+352 silly registry.get     age: '10',
+352 silly registry.get     'x-served-by': 'cache-syd1622-SYD',
+352 silly registry.get     'x-cache': 'HIT',
+352 silly registry.get     'x-cache-hits': '1',
+352 silly registry.get     'x-timer': 'S1416888405.403013,VS0,VE0',
+352 silly registry.get     vary: 'Accept',
+352 silly registry.get     'content-length': '0',
+352 silly registry.get     'keep-alive': 'timeout=10, max=50',
+352 silly registry.get     connection: 'Keep-Alive' } ]
+353 verbose etag cli-color from cache
+354 silly addNameRange number 2 { name: 'cli-color', range: '>=0.2.3-0 <0.3.0-0', hasData: true }
+355 silly addNameRange versions [ 'cli-color',
+355 silly addNameRange   [ '0.1.0',
+355 silly addNameRange     '0.1.1',
+355 silly addNameRange     '0.1.2',
+355 silly addNameRange     '0.1.3',
+355 silly addNameRange     '0.1.4',
+355 silly addNameRange     '0.1.5',
+355 silly addNameRange     '0.1.6',
+355 silly addNameRange     '0.1.7',
+355 silly addNameRange     '0.2.0',
+355 silly addNameRange     '0.2.1',
+355 silly addNameRange     '0.2.2',
+355 silly addNameRange     '0.2.3',
+355 silly addNameRange     '0.3.0',
+355 silly addNameRange     '0.3.1',
+355 silly addNameRange     '0.3.2' ] ]
+356 verbose addNamed [ 'cli-color', '0.2.3' ]
+357 verbose addNamed [ '0.2.3', '0.2.3' ]
+358 silly lockFile c1648217-cli-color-0-2-3 cli-color@0.2.3
+359 verbose lock cli-color@0.2.3 /Users/jackjeffress/.npm/c1648217-cli-color-0-2-3.lock
+360 silly lockFile 3b071da4-rg-cli-color-cli-color-0-2-3-tgz https://registry.npmjs.org/cli-color/-/cli-color-0.2.3.tgz
+361 verbose lock https://registry.npmjs.org/cli-color/-/cli-color-0.2.3.tgz /Users/jackjeffress/.npm/3b071da4-rg-cli-color-cli-color-0-2-3-tgz.lock
+362 verbose addRemoteTarball [ 'https://registry.npmjs.org/cli-color/-/cli-color-0.2.3.tgz',
+362 verbose addRemoteTarball   '0a25ceae5a6a1602be7f77d28563c36700274e88' ]
+363 info retry fetch attempt 1 at 15:06:45
+364 verbose fetch to= /var/folders/5z/y6dhx4dd7hqd70x9nsghxwmr0000gn/T/npm-7274-_SGYcU5z/registry.npmjs.org/cli-color/-/cli-color-0.2.3.tgz
+365 http GET https://registry.npmjs.org/cli-color/-/cli-color-0.2.3.tgz
+366 http 200 https://registry.npmjs.org/cli-color/-/cli-color-0.2.3.tgz
+367 silly lockFile 3b071da4-rg-cli-color-cli-color-0-2-3-tgz https://registry.npmjs.org/cli-color/-/cli-color-0.2.3.tgz
+368 silly lockFile 3b071da4-rg-cli-color-cli-color-0-2-3-tgz https://registry.npmjs.org/cli-color/-/cli-color-0.2.3.tgz
+369 silly lockFile c1648217-cli-color-0-2-3 cli-color@0.2.3
+370 silly lockFile c1648217-cli-color-0-2-3 cli-color@0.2.3
+371 silly lockFile 5e3d31f2-cli-color-0-2-3 cli-color@~0.2.3
+372 silly lockFile 5e3d31f2-cli-color-0-2-3 cli-color@~0.2.3
+373 verbose about to build /Users/jackjeffress/Google Drive/general_assembly/wdi-7/WDI_SYD_7/node_modules/jsc
+374 info /Users/jackjeffress/Google Drive/general_assembly/wdi-7/WDI_SYD_7/node_modules/jsc unbuild
+375 info preuninstall jsc@0.3.11
+376 info uninstall jsc@0.3.11
+377 verbose true,/Users/jackjeffress/Google Drive/general_assembly/wdi-7/WDI_SYD_7/node_modules,/Users/jackjeffress/Google Drive/general_assembly/wdi-7/WDI_SYD_7/node_modules unbuild jsc@0.3.11
+378 verbose /Users/jackjeffress/Google Drive/general_assembly/wdi-7/WDI_SYD_7/node_modules/.bin,[object Object] binRoot
+379 info postuninstall jsc@0.3.11
+380 error Error: EACCES, mkdir '/Users/jackjeffress/.npm/cli-color/0.2.3'
+380 error  { [Error: EACCES, mkdir '/Users/jackjeffress/.npm/cli-color/0.2.3']
+380 error   errno: 3,
+380 error   code: 'EACCES',
+380 error   path: '/Users/jackjeffress/.npm/cli-color/0.2.3',
+380 error   parent: 'jsc' }
+381 error Please try running this command again as root/Administrator.
+382 error System Darwin 14.0.0
+383 error command "node" "/usr/local/bin/npm" "install" "jsc"
+384 error cwd /Users/jackjeffress/Google Drive/general_assembly/wdi-7/WDI_SYD_7
+385 error node -v v0.10.29
+386 error npm -v 1.4.14
+387 error path /Users/jackjeffress/.npm/cli-color/0.2.3
+388 error code EACCES
+389 error errno 3
+390 error stack Error: EACCES, mkdir '/Users/jackjeffress/.npm/cli-color/0.2.3'
+391 verbose exit [ 3, true ]
