@@ -1,0 +1,7 @@
+@tasks = run_sql("SELECT * FROM tasks;")
+
+@tasks.each do |task|
+  worker = run_sql("SELECT * FROM workers WHERE id=#{task["worker_id"]}").first
+  puts task["title"]
+  puts worker["first_name"]
+end

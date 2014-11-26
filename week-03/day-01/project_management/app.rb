@@ -108,3 +108,20 @@ put '/workers/:id' do
 
   redirect '/workers'
 end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
