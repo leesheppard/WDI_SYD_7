@@ -1,3 +1,22 @@
+As a shelter owner
+I would like to manage the pets at my shelter
+So that I can work efficiently
+
+  Scenario: List animals
+    Given 5 dogs exist
+    And 3 cats exist
+    When I go to the list of animals
+    Then I should see the 5 dogs
+    And I should see the 3 cats
+
+  Scenario: Show animal details
+
+  Scenario: Add animal
+
+  Scenario: Edit animal
+
+  Scenario: Delete animal
+
 == README
 
 This README would normally document whatever steps are necessary to get the
