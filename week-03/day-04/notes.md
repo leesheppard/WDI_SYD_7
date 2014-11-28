@@ -104,18 +104,15 @@ P^6.S. If using Modelname.new - make sure that after you create it, you use Mode
 - **vendor** - Libraries that are provided from third-party vendors go here.
 - **README** - You edit this - hopefully it has a lot of details - for more go to [here.]()
 - **Rakefile** - Helps build, package and test the Rails code. 
+#### Bundler
 
+[The Bundler Website](http://bundler.io/)
 
-Bundler
-Naming
-Class Methods
-	- Getting and Setting
-Self vs. @
-Instance Variables
-Rails migrations
-rails generate
-Form For
-
+Common commands include:
+- bundle (show the gems that you are using - plus install)
+- bundle install (install necessary gems)
+- bundle update (updates gems)
+- bundle list (shows the current gems)
 
 
 

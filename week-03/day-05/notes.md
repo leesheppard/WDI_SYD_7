@@ -91,4 +91,45 @@ a.save
 a.errors.full_messages
 ```
 
+Use strong parameters!!!
+
+```ruby
+def create
+	@artist = Artist.create(
+		params.require(:artist).permit( :first_name, :last_name )
+	)
+	redirect_to @artist
+end
+
+\# BUT WE PREFER THIS WE (KEEP IT DRY)
+def create
+	@artist = Artist.create(artist_params)
+	redirect_to @artist
+end
+
+private
+	def artist_params
+		params.require(:artist).permit(
+			:first_name,
+			:last_name
+		)
+	end
+```
+
+Remember that any methods that come after the private keyword can only be called within the class (i.e. other methods in this class)!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
