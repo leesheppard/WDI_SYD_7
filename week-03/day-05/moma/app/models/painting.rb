@@ -1,3 +1,4 @@
 class Painting < ActiveRecord::Base
-  belongs_to :artist
+  has_many :artist_paintings
+  has_many :artists, through: :artist_paintings
 end

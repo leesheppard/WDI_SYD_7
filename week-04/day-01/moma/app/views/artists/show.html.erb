@@ -1,0 +1,20 @@
+<h2><%= @artist.name %></h2>
+<ul>
+  <li>Date of Birth: <%= @artist.dob %></li>
+  <li>Nationality: <%= @artist.nationality %></li>
+</ul>
+
+<p>
+  <strong>Actions: </strong>
+  <%= link_to "Edit", edit_artist_path(@artist) %> |
+  <%= link_to "Destroy", @artist, method: :delete, data: { confirm: "Are you sure?" } %>
+</p>
+
+<h3>Related Paintings</h3>
+<% @artist.paintings.each do |painting| %>
+  <div class="painting">
+    <%= link_to [@artist, painting] do %>
+      <%= image_tag painting.url %>
+    <% end %>
+  </div>
+<% end %>

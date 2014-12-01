@@ -1,4 +1,8 @@
 class ArtistsController < ApplicationController
+  def index
+    @artists = Artist.all
+  end
+
   def show
     @artist = Artist.find(params[:id])
   end
@@ -31,7 +35,8 @@ class ArtistsController < ApplicationController
           :nationality,
           :date_of_birth,
           :period,
-          :image
+          :image,
+          { painting_ids: [] }
         )
     end
 end

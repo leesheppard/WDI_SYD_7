@@ -1,0 +1,11 @@
+<%= link_to "Add Artist", new_artist_path %>
+
+<ul>
+<% @artists.each do |artist| %>
+  <li>
+    <%= link_to artist.first_name, artist %> |
+    <%= link_to "Edit", edit_artist_path(artist) %> |
+    <%= link_to "Destroy", artist, method: :delete, data: { confirm: "Are you sure?" } %>
+  </li>
+<% end %>
+</ul>

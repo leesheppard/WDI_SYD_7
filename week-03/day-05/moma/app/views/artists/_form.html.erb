@@ -23,6 +23,17 @@
     <%= f.label :image %><br>
     <%= f.text_field :image %>
   </p>
+
+  <p>
+    <%= f.label :painting_ids, "Artist" %>
+    <%= f.collection_select(:painting_ids, Painting.all, :id, :title ) %>
+  </p>
+
+  <% Painting.all.each do |painting| %>
+    <%= f.check_box :painting_ids, {name: "artist[painting_ids][]"}, painting.id, nil %>
+    <%= f.label :artist_ids, painting.title %>
+  <% end %>
+
   <p>
     <%= f.submit %>
   </p>

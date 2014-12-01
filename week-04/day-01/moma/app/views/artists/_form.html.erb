@@ -1,0 +1,17 @@
+<%= form_for @artist do |f| %>
+  <p>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :dob %><br>
+    <%= f.date_field :dob %>
+  </p>
+  <p>
+    <%= f.label :nationality %><br>
+    <%= f.text_field :nationality %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
