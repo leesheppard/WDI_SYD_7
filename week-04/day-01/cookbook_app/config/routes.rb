@@ -29,10 +29,8 @@
 #
 
 Rails.application.routes.draw do
-  get 'books/index'
-
   root to: 'pages#index'
-
+  
   resources :books
   resources :recipes
   resources :ingredients

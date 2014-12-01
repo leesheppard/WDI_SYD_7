@@ -4,3 +4,8 @@
 <h5>by <%= @book.chef %></h5>
 <%= image_tag @book.image %>
 <h6><%= @book.cuisine %></h6>
+
+<p>
+  <%= link_to "Edit", edit_book_path(@book) %> |
+  <%= link_to "Destroy", @book, method: :delete, data: { confirm: 'Are you sure?' } %>
+</p>
