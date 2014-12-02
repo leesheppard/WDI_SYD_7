@@ -11,6 +11,7 @@
 #  image        :string(255)
 #  created_at   :datetime
 #  updated_at   :datetime
+#  book_id      :integer
 #
 
 class Recipe < ActiveRecord::Base
@@ -19,3 +20,15 @@ class Recipe < ActiveRecord::Base
 	has_many :ingredients_recipes
 	has_many :ingredients, through: :ingredients_recipes
 end
+
+
+
+
+
+
+
+
+
+
+
+
