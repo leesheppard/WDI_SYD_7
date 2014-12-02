@@ -16,6 +16,12 @@
   <li>Serving Size: <%= @recipe.servingsize %></li>
 </ul>
 
+<ul>
+<% @recipe.ingredients.each do |ingredient| %>
+  <li><%= ingredient.name %></li>
+<% end %>
+</ul>
+
 <p>
   <%= @recipe.instructions %>
 </p>

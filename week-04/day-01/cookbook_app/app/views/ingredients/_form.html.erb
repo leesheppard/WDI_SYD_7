@@ -1,3 +1,11 @@
+<% unless @ingredient.errors.empty? %>
+<ul id="errors">
+  <% @ingredient.errors.full_messages.each do |error| %>
+  <li><%= error %></li>
+  <% end %>
+</ul>
+<% end %>
+
 <%= form_for @ingredient do |f| %>
   <p>
     <%= f.label :name %>

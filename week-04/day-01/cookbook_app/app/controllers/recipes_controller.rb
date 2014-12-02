@@ -52,7 +52,8 @@ class RecipesController < ApplicationController
       :servingsize,
       :instructions,
       :image,
-      :book_id
+      :book_id,
+      { ingredient_ids: [] }
     )
   end
 end

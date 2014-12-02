@@ -12,6 +12,8 @@
 #
 
 class Ingredient < ActiveRecord::Base
+  validates :name, uniqueness: true
+
 	has_many :ingredients_recipes
 	has_many :recipes, through: :ingredients_recipes
 end

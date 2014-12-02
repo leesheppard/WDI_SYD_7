@@ -15,6 +15,10 @@
 #
 
 class Recipe < ActiveRecord::Base
+  validates :instructions, length: {
+    minimum: 200
+  }
+
 	belongs_to :book
 
 	has_many :ingredients_recipes

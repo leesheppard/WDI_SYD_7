@@ -28,6 +28,22 @@
     <%= f.collection_select :book_id, Book.all, :id, :title %>
   </p>
   <p>
+    <%= f.label :ingredient_ids, "Ingredients" %>
+    <%= f.collection_check_boxes :ingredient_ids, Ingredient.all, :id, :name %>
+  </p>
+  <p>
     <%= f.submit %>
   </p>
 <% end %>
+
+
+
+
+
+
+
+
+
+
+
+
