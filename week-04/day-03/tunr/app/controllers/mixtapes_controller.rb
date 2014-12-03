@@ -1,4 +1,5 @@
 class MixtapesController < ApplicationController
+  before_action :authenticate_user!, except: [:index, :show]
   before_action :find_mixtape, only: [:show, :edit, :update, :destroy]
 
   def index
@@ -35,16 +36,16 @@ class MixtapesController < ApplicationController
 
   def destroy
     @mixtape.destroy
-    redirect_to songs_path
+    redirect_to mixtape_path
   end
 
   private
 
-  def find_song
+  def find_mixtape
     @mixtape = Mixtape.find(params[:id])
   end
 
-  def song_params
+  def mixtape_params
     params.require(:mixtape).permit(
       :name,
       :description,

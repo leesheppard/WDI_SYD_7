@@ -1,10 +1,12 @@
 <h2><%= @mixtape.name %></h2>
 
+<% if user_signed_in? %>
 <p>
 <strong>Actions:</strong>
 <%= link_to "Edit", edit_mixtape_path(@mixtape) %> |
 <%= link_to "Destroy", @mixtape, method: :delete, data: { confirm: "Are you sure?" } %>
 </p>
+<% end %>
 
 <hr>
 
