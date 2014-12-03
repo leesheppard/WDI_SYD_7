@@ -1,12 +1,17 @@
+@import url(http://fonts.googleapis.com/css?family=Gruppo);
+
 html {
-  font-family: sans-serif;
+  font-family: serif;
+  color: #666;
 }
 
 h1, h2, h3, h4, h5, h6, p, li, dt, dd {
   line-height: 1.5em;
 }
 
-h1 { font-size: 3em; }
+h1, h2, h3, h4, h5, h6 { color: #111; font-family: Gruppo, sans-serif; }
+
+h1 { font-size: 7em; text-align: center; }
 h2 { font-size: 2em; }
 h3 { font-size: 1.8em; }
 h3 { font-size: 1.6em; }
@@ -15,8 +20,9 @@ h5 { font-size: 1.2em; }
 h6 { font-size: 1em; }
 
 a {
-  color: blue;
+  color: #AA3939;
   text-decoration: none;
+  font-family: Gruppo, sans-serif;
 }
 
 dl { margin: 20px 0; }
