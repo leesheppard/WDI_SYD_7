@@ -9,11 +9,13 @@
 <body>
 
   <div id="container">
-    <h1>TunR</h1>
+    <h1><%= link_to "TunR", root_path %></h1>
 
     <nav>
       <%= link_to "Home", root_path %>
       <%= link_to "Artists", artists_path %>
+      <%= link_to "Songs", artists_path %>
+      <%= link_to "Mixtapes", mixtapes_path %>
     </nav>
 
     <p class="notice"><%= notice %></p>

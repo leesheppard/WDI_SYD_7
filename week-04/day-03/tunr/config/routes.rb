@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   devise_for :users
 
-  resources :artists
+  resources :artists, :songs, :mixtapes
 
   root "welcome#index"
 
