@@ -1,0 +1,10 @@
+<h2>Mixtapes</h2>
+
+<p><%= link_to "Add Mixtape", new_mixtape_path, class: 'button' %></p>
+
+<% @mixtapes.each do |mixtape| %>
+<div class="mixtape">
+  <h3><%= mixtape.name %></h3>
+  <p><%= mixtape.description.truncate(100) %></p>
+</div>
+<% end %>

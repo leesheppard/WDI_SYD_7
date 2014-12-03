@@ -1,0 +1,20 @@
+<h2><%= @mixtape.name %></h2>
+
+<p>
+<strong>Actions:</strong>
+<%= link_to "Edit", edit_mixtape_path(@mixtape) %> |
+<%= link_to "Destroy", @mixtape, method: :delete, data: { confirm: "Are you sure?" } %>
+</p>
+
+<hr>
+
+<% if @mixtape.songs.count == 0 %>
+  <p>No songs yet...</p>
+<% else %>
+  <% @mixtape.songs.each do |song| %>
+    <div class="song">
+      <h3><%= link_to song.name, song %></h3>
+    </div>
+  <% end %>
+<% end %>
+

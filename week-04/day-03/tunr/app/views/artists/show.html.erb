@@ -1,16 +1,16 @@
 <h2><%= @artist.name %></h2>
 
 <p>
-  <strong>Actions:</strong>
-  <%= link_to "Edit", edit_artist_path(@artist) %> |
-  <%= link_to "Destroy", @artist, method: :delete, data: { confirm: "Are you sure?" } %>
+<strong>Actions:</strong>
+<%= link_to "Edit", edit_artist_path(@artist) %> |
+<%= link_to "Destroy", @artist, method: :delete, data: { confirm: "Are you sure?" } %>
 </p>
 
 <hr>
 
 <h4><%= @artist.name %>'s Bio</h4>
 <p>
-  <%= @artist.bio %>
+<%= @artist.bio %>
 </p>
 
 <dl>
@@ -24,5 +24,13 @@
 
 <h4><%= @artist.name %>'s Songs</h4>
 
-<p>No songs yet...</p>
+<% if @artist.songs.count == 0 %>
+  <p>No songs yet...</p>
+<% else %>
+  <% @artist.songs.each do |song| %>
+    <div class="song">
+      <h3><%= link_to song.name, song %></h3>
+    </div>
+  <% end %>
+<% end %>
 
