@@ -1,0 +1,8 @@
+.form_field {
+  padding: 5px 0px;
+}
+
+label {
+  display: block;
+  line-height: 1.5em;
+}

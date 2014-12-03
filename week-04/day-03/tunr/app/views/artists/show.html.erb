@@ -1,0 +1,28 @@
+<h2><%= @artist.name %></h2>
+
+<p>
+  <strong>Actions:</strong>
+  <%= link_to "Edit", edit_artist_path(@artist) %> |
+  <%= link_to "Destroy", @artist, method: :delete, data: { confirm: "Are you sure?" } %>
+</p>
+
+<hr>
+
+<h4><%= @artist.name %>'s Bio</h4>
+<p>
+  <%= @artist.bio %>
+</p>
+
+<dl>
+  <dt>Label</dt>
+  <dd><%= @artist.label %></dd>
+  <dt>Hometown</dt>
+  <dd><%= @artist.hometown %></dd>
+  <dt>Years Active</dt>
+  <dd><%= @artist.years_active %></dd>
+</dl>
+
+<h4><%= @artist.name %>'s Songs</h4>
+
+<p>No songs yet...</p>
+

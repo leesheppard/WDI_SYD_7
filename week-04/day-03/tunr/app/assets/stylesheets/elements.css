@@ -1,0 +1,22 @@
+nav {
+  line-height: 1.5em;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  font-size: 1.5em;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px;
+  background-color: #99cc99;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid #77aa77;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #333;
+  box-shadow: 0px 3px 1px #336633;
+  line-height: 1em;
+  margin-bottom: 20px;
+}

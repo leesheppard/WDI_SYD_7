@@ -8,10 +8,19 @@
 </head>
 <body>
 
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
+  <div id="container">
+    <h1>TunR</h1>
 
-<%= yield %>
+    <nav>
+      <%= link_to "Home", root_path %>
+      <%= link_to "Artists", artists_path %>
+    </nav>
+
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
+    <%= yield %>
+  </div>
 
 </body>
 </html>
