@@ -1,5 +1,7 @@
 <h1>Show page</h1>
 
+<%= flash[:message] %>
+
 <h2><%= @book.title %></h2>
 <h5>by <%= @book.chef %></h5>
 <%= image_tag @book.image %>
