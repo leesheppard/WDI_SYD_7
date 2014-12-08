@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BootTest</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <%= link_to "FluffR", articles_path, class: "navbar-brand" %>
+
+        <ul class="nav navbar-nav">
+          <li class="dropdown visible-xs visible-sm">
+            <a href="#" class="dropdown-toggle glyphicon glyphicon-th-list" data-toggle="dropdown" ></a>
+            <ul class="dropdown-menu">
+              <li>
+                <%= link_to "First Article", article_path(1) %>
+              </li>
+              <li>
+                <%= link_to "First Article", article_path(1) %>
+              </li>
+              <li>
+                <%= link_to "First Article", article_path(1) %>
+              </li>
+              <li>
+                <%= link_to "First Article", article_path(1) %>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <%= yield %>
+  </div>
+
+</body>
+</html>

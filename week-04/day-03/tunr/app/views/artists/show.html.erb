@@ -1,6 +1,6 @@
 <h2><%= @artist.name %></h2>
 
-<% if user_signed_in? %>
+<% if user_signed_in? && current_user.admin? %>
 <p>
 <strong>Actions:</strong>
 <%= link_to "Edit", edit_artist_path(@artist) %> |

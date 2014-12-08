@@ -1,6 +1,8 @@
 <h2>Songs</h2>
 
+<% if user_signed_in? && current_user.admin? %>
 <p><%= link_to "Add Song", new_song_path, class: 'button' %></p>
+<% end %>
 
 <% @songs.each do |song| %>
 <div class="song">

@@ -19,7 +19,20 @@
     <%= f.label :artist_id %>
     <%= f.collection_select :artist_id, Artist.all, :id, :name %>
   </div>
+  <div class="form_field">
+    <%= f.label :url %>
+    <%= f.url_field :url %>
+  </div>
   <div class="form_action">
     <%= f.submit %>
   </div>
 <% end %>
+
+
+
+
+
+
+
+
+

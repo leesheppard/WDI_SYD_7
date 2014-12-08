@@ -1,6 +1,8 @@
 <h2>Artists</h2>
 
-<p><%= link_to "Add Artist", new_artist_path, class: 'button' %></p>
+<% if user_signed_in? && current_user.admin? %>
+  <p><%= link_to "Add Artist", new_artist_path, class: 'button' %></p>
+<% end %>
 
 <% @artists.each do |artist| %>
 <div class="artist">

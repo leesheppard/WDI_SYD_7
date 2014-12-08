@@ -1,10 +1,12 @@
 <h2><%= @song.name %></h2>
 
+<% if user_signed_in? && current_user.admin? %>
 <p>
   <strong>Actions:</strong>
   <%= link_to "Edit", edit_song_path(@song) %> |
   <%= link_to "Destroy", @song, method: :delete, data: { confirm: "Are you sure?" } %>
 </p>
+<% end %>
 
 <hr>
 

@@ -1,6 +1,6 @@
 <h2><%= @mixtape.name %></h2>
 
-<% if user_signed_in? %>
+<% if user_signed_in? && (current_user.admin? || current_user.mixtape_ids.include?(@mixtape.id)) %>
 <p>
 <strong>Actions:</strong>
 <%= link_to "Edit", edit_mixtape_path(@mixtape) %> |
