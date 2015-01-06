@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <div id="container"></div>
+
+  <script type="application/template" id="todo-template">
+    <div class="todo-item">
+      <p><%= text %></p>
+      <span><%= createdAt %></span>
+    </div>
+  </script>
+
+  <script type="application/template" id="hello-template">
+    <p>Hello <%= name %></p>
+  </script>
+
+  <script src="underscore.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
