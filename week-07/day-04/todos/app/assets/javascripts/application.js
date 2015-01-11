@@ -22,7 +22,32 @@
 
 
 $(function() {
+  $("body").on("click", ".todo button", function() {
+    var $todo = $(this).parent();
+    var todoID = $todo.attr("data-id");
+
+    $todo.hide();
+
+    $.ajax({
+      method: "POST",
+      url: "/todos/" + todoID,
+      dataType: "json",
+      data: {
+        _method: "DELETE"
+      },
+      success: function() {
+        $todo.remove();     
+      },
+      error: function() {
+        alert("Sorry something went wrong...");
+        $todo.show();
+      }
+    });
+  });
+
   $("#add-todo").on("keypress", function(event) {
+    $("body").append("<p data-id=\"" + todo.id + "\" class=\"todo\"><span>" + todo.text + "</span> <button>x</button></p>");
+
     if (event.keyCode === 13 && $(this).val() !== "") {
       $.ajax({
         method: "POST",
@@ -34,14 +59,13 @@ $(function() {
           }
         },
         success: function(todo) {
-          $("body").append("<p data-id=\"" + todo.id + "\" class=\"todo\">" + todo.text + "</p>");
         }
       });
     }
   });
 
-  $("body").on("click", ".todo", function() {
-    var todoURL = "/todos/" + $(this).attr("data-id");
+  $("body").on("click", ".todo span", function() {
+    var todoURL = "/todos/" + $(this).parent().attr("data-id");
     // "/todos/11"
 
     var self = this;
@@ -53,7 +77,7 @@ $(function() {
 
   $.getJSON("/todos", function(todos) {
     $.each(todos, function(index, todo) {
-      $("body").append("<p data-id=\"" + todo.id + "\" class=\"todo\">" + todo.text + "</p>");
+      $("body").append("<p data-id=\"" + todo.id + "\" class=\"todo\"><span>" + todo.text + "</span> <button>x</button></p>");
     });
   });
 });

@@ -39,7 +39,7 @@ class TodosController < ApplicationController
     @todo.destroy
     respond_to do |format|
       format.html { redirect_to root_path }
-      format.json { render text: "" }
+      format.json { render json: {status: "ok"} }
     end
   end
 
