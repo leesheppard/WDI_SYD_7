@@ -1,36 +1,24 @@
 class StatusesController < ApplicationController
   def index
     @statuses = Status.all
-
-    respond_to do |f|
-      f.json { render json: @statuses }
-    end
+    render json: @statuses
   end
 
   def create
     @status = Status.create(status_params)
-
-    respond_to do |f|
-      f.json { render json: @status }
-    end
+    render json: @status
   end
 
   def update
     @status = Status.find(params[:id])
     @status.update(status_params)
-
-    respond_to do |f|
-      f.json { render json: @status }
-    end
+    render json: @status
   end
 
   def destroy
     @status = Status.find(params[:id])
     @status.destroy
-
-    respond_to do |f|
-      f.json { render json: { status: "ok" } }
-    end
+    render json: { status: "ok" }
   end
 
   private
