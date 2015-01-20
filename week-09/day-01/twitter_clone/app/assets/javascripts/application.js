@@ -16,24 +16,8 @@
 //= require_tree ./templates
 //= require_tree ./models
 //= require_tree ./collections
+//= require_tree ./views
 //= require_tree .
-
-var statusCollection = new Statuses();
-
-statusCollection.on("add", function(status) {
-  $("body").append(
-    JST['status'](
-      status.toJSON()
-    )
-  );
-});
-
-statusCollection.fetch();
-
-statusCollection.create({
-  username: "JackFluff", // $(".username").val()
-  content: "FLUFFY THE THREE HEADED DOG!" // $(".status-text").val()
-});
 
 
 
