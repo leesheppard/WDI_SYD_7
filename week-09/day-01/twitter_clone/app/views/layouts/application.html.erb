@@ -9,17 +9,9 @@
 
   <%= yield %>
 
-  <script id="status-template" type="text/x-handlebars-template">
-    <div class="status">
-      <p>{{content}}</p>
-      <p><strong>{{username}}</strong></p>
-    </div>
-  </script>
-
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 
 </body>
