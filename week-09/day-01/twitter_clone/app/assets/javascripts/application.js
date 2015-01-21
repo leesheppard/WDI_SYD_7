@@ -23,7 +23,7 @@ var statusesCollection = new Statuses();
 
 var timelineView = new TimelineView({ collection: statusesCollection });
 
-$("body").append(timelineView.el);
+$("#container").append(timelineView.el);
 
 
 

@@ -14,11 +14,51 @@
  *= require_self
  */
 
+body { font-family: Helvetica; }
+
+p {
+  line-height: 1.5em;
+}
+
+button {
+  border: 0;
+  padding: 10px;
+  background: #99ff99;
+  box-shadow: -3px 3px 1px #000;
+  margin: 10px 0;
+}
+
+#container {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .timeline {
-  background: #eee;
+  padding: 20px;
 }
 
 .status {
-  margin: 20px;
-  background: #999;
+  margin-bottom: 20px;
+  overflow: hidden;
+  padding: 20px;
+  box-shadow: -3px 3px 1px #000;
+  border: 1px solid #999;
+  background: #fff;
+  position: relative;
+}
+
+.status:last-child {
+  margin-bottom: 0;
+}
+
+.status p strong {
+  font-size: 0.7em;
+  font-weight: bold;
+  color: #333;
+}
+
+.status button {
+  position: absolute;
+  top: 0px;
+  right: 10px;
 }
