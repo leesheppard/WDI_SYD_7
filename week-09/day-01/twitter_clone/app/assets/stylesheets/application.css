@@ -13,3 +13,12 @@
  *= require_tree .
  *= require_self
  */
+
+.timeline {
+  background: #eee;
+}
+
+.status {
+  margin: 20px;
+  background: #999;
+}
