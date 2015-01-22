@@ -1,4 +1,6 @@
-var Status = Backbone.Model.extend({
+var TwitterCloneApp = TwitterCloneApp || {};
+
+TwitterCloneApp.Status = Backbone.Model.extend({
   urlRoot: '/statuses',
 
   defaults: {

@@ -17,14 +17,17 @@
 //= require_tree ./models
 //= require_tree ./collections
 //= require_tree ./views
+//= require_tree ./routers
 //= require_tree .
 
-var statusesCollection = new Statuses();
+var TwitterCloneApp = TwitterCloneApp || {};
 
-var timelineView = new TimelineView({ collection: statusesCollection });
-
-$("#container").append(timelineView.el);
-
+$(function() {
+  TwitterCloneApp.router = new TwitterCloneApp.AppRouter();
+  TwitterCloneApp.router.statusesCollection.fetch().then(function() {
+    Backbone.history.start();  
+  });
+}); 
 
 
 

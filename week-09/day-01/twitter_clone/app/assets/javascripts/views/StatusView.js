@@ -1,4 +1,6 @@
-var StatusView = Backbone.View.extend({
+var TwitterCloneApp = TwitterCloneApp || {};
+
+TwitterCloneApp.StatusView = Backbone.View.extend({
   tagName: 'div',
   className: 'status',
   template: JST['statuses/status'],
