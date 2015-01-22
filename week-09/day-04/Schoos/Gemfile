@@ -17,15 +17,18 @@ group :proudction do
 end
 
 group :development, :test do
-  gem 'rb-fsevent'
+  gem 'pry-rails'
+  gem 'listen'
   gem 'factory_girl_rails'
   gem 'rspec-rails'
+  gem 'spring-commands-rspec'
   gem 'guard-rails'
   gem 'guard-rspec'
   gem 'guard-jasmine'
+  gem 'guard-bundler', require: false
+  gem 'guard-migrate'
   gem 'sqlite3'
   gem 'byebug'
   gem 'web-console', '~> 2.0'
   gem 'spring'
 end
-
