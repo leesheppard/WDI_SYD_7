@@ -17,6 +17,7 @@ group :proudction do
 end
 
 group :development, :test do
+  gem 'rb-fsevent'
   gem 'factory_girl_rails'
   gem 'rspec-rails'
   gem 'guard-rails'
