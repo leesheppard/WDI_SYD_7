@@ -10,7 +10,8 @@ TwitterCloneApp.AppRouter = Backbone.Router.extend({
   routes: {
     "": "home",
     "about": "aboutPage",
-    ":username": "filterUser"
+    ":username": "filterUser",
+    "*404": "notFound"
   },
 
   filterUser: function(username) {
@@ -28,6 +29,10 @@ TwitterCloneApp.AppRouter = Backbone.Router.extend({
 
   aboutPage: function() {
     $("#container").html(JST['about']());
+  },
+
+  notFound: function() {
+    $("#container").html(JST['404']());
   }
 });
 

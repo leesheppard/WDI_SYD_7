@@ -9,7 +9,6 @@ TwitterCloneApp.TimelineView = Backbone.View.extend({
   },
 
   render: function() {
-    console.log(this.username);
     if (this.username) {
       this.collection.filterByUser(this.username).each(this.addStatus, this);
     } else {

@@ -25,7 +25,7 @@ var TwitterCloneApp = TwitterCloneApp || {};
 $(function() {
   TwitterCloneApp.router = new TwitterCloneApp.AppRouter();
   TwitterCloneApp.router.statusesCollection.fetch().then(function() {
-    Backbone.history.start();  
+    Backbone.history.start({ pushState: true });  
   });
 }); 
 
