@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
 
-  resources :lessons
-
-  resources :schools
+  resources :schools do
+    resources :lessons
+  end
 
   root to: "pages#home"
 
