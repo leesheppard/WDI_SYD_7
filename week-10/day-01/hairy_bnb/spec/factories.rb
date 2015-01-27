@@ -1,4 +1,7 @@
-FactoryGirl.define do
+FactoryGirl.define do  factory :tenant do
+    
+  end
+
   factory :apartment do
     sequence(:title) { |n| "Spacious #{n} Bed Apartment with Grand View" }
     sequence(:bedrooms) { |n| n }
